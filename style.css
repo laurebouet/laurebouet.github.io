@@ -1,3 +1,11 @@
+/* VAR */
+
+:root{
+    --title-padding : 10px;
+    --font-border-title : 50px;
+    --font-border-text : 10px;
+}
+
 /* NAV BAR */
 
 *{
@@ -23,14 +31,16 @@
     margin: 10%;
 }
 
-.menu a{
+.homemenu{
     color: #000000;
     text-decoration: none;
     font-weight: bold;
-    padding: 2%;
+    padding: var(--title-padding);
 }
-.menu a:hover{
-    text-decoration: underline #a4c2c9 ;
+.homemenu:hover{
+    background-color: #a4c2c9 ;
+    padding: var(--title-padding);
+    border-radius: var(--font-border-title);
 }
 
 /* LOGO */
@@ -100,11 +110,11 @@ header{
 /* TEXT */
 .d1text{
     background-color: #6fb9b9;
-    border-radius: 30px 30px;
-    padding: 15px 15px; /*background texte*/
-    margin-left: 20%;
-    margin-top: 3%;
-    width: 58%;
+    border-radius:var(--font-border-text);
+    padding: var(--title-padding); /*background texte*/
+    /* margin-left: 20%;
+    margin-top: 3%; */
+    width: 60%;
     /*margin:7%; !*espace photo-texte *!*/
     text-align: center;
     /*margin-left: 60%; !*deplacement vers la droite*!*/
@@ -229,7 +239,7 @@ header{
 
 /* quote */
 .quote p{
-    font-family: 'Sacramento', cursive;
+    font-family:     'Sacramento', cursive;
     float: left;
     font-size: 160%;
     position: relative;
