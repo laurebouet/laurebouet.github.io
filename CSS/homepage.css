@@ -1,0 +1,103 @@
+@import "variables.css";
+
+/* home page */
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Epilogue', sans-serif;
+    
+}
+/* TITLES */
+
+.title{
+    margin-top: var(--section-padding);
+    text-align: center;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+/* TEXT */
+.d1text{
+    background-color: var(--bg-color); ;
+    border-radius:var(--font-border-text);
+    padding: var(--title-padding); /*background texte*/
+    /* margin-left: 20%;
+    margin-top: 3%; */
+    width: var(--bg-width);
+    /*margin:7%; !*espace photo-texte *!*/
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    /*margin-left: 60%; !*deplacement vers la droite*!*/
+    /*width: 60%; !*espace pour le texte*!*/
+}
+.intro{
+    text-align: start;
+    padding: 1%;
+}/* IMAGES */
+
+.imgscroll {
+    margin-top: 5%;
+    display: list-item;
+    position: relative;
+    text-align: center;
+}
+
+.largepic img{
+
+    width: 30%;
+    height: 16.5%;
+}
+.highpic img{
+    width: 19.9%;
+    height: 19.7%;
+}
+
+
+/* text picture */
+.pictext{
+    font-family: 'Epilogue', sans-serif;
+
+    position: absolute;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 2%;
+    padding: 1%;
+    text-transform: uppercase;
+}
+#noktext, #bretext{
+    margin-left: 28%;
+    margin-top: -6%;
+}
+#tuntext, #dktext{
+    margin-left: 59%;
+    margin-top: -6%;
+}
+#tantext{
+    margin-left: 23%;
+    margin-top: -6%;
+}
+#fintext{
+    margin-left: 44%;
+    margin-top: -6%;
+}
+#ntltext{
+    margin-left: 63%;
+    margin-top: -6%;
+}
+.span_art a{
+    font-family: 'Epilogue', sans-serif;
+
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 60%;
+    border: 1px solid white;
+    padding: 5%;
+}
+.span_art a:hover{
+    background-color: #ffffff;
+    color: black;
+}
+

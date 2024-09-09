@@ -1,3 +1,5 @@
+// @import "variables.css"
+
 var worldmap = document.querySelectorAll("path");
 var names = document.querySelectorAll('path');
 

@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <!-- css -->
-    <link rel="stylesheet" type="text/css" href="../style.css"/>
-    <link rel="stylesheet" type="text/css" href="../variables.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/variables.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/homepage.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/worldmap.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/footer.css"/>
+    
+    
     <!-- favicon -->
     <link rel="icon" href="../assets/pics/favicon.ico" />
     <!-- icons -->
@@ -12,34 +17,27 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comme:wght@300&family=Dancing+Script:wght@500&family=Great+Vibes&family=Sacramento&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300&family=Felipa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <section id="up" class="barnav">
         <div class="logo">
-            <a href="../main/main.php"><img src="../images/logo.jpg" alt="logo"></a>
+            <a href="./index.html"><img src="../images/logo.jpg" alt="logo"></a>
         </div>
         <div class="accueil">
             <ul class="navlinks">
                 <li class="menu">
-                    <a class="homemenu" href="../main/main.php">Accueil</a>
+                    <a class="homemenu" href="./index.html">Accueil</a>
                 </li>
                 <li class="menu">
-                    <a href="../destinations/destination.php" class="homemenu">Destinations</a>
-<!--                    <ul class="sousmenu">-->
-<!--                        <li><a href="#">europe</a></li>-->
-<!--                        <li><a href="#">afrique</a></li>-->
-<!--                        <li><a href="#">am&eacute;rique du sud</a></li>-->
-<!--                    </ul>-->
+                    <a href="../destinations.html" class="homemenu">Destinations</a>
                 </li>
                 <li class="menu">
-                    <a class="homemenu" href="../photos/photos.php">Photos</a>
+                    <a class="homemenu" href="../photos.html">Photos</a>
                 </li>
                 <li class="menu">
-                    <a class="homemenu" href="../apropos/contact.php">contact</a>
+                    <a class="homemenu" href="../apropos.html">contact</a>
                 </li>
             </ul>
         </div>
@@ -356,28 +354,12 @@
                 des phrases…)1.
             </p>
         </div>
-        <script src="worldmap.js"></script>
+        <script src="../JavaScript/worldmap.js"></script>
     </section>
     
 
     <footer class="footer">
-        <ul class="list">
-            <li>Mentions légales</li>
-            <li><a href="../apropos/contact.php">&Agrave; propos</a></li>
-            <li>Contact</li>
-        </ul>
-        <ul class="icons">
-            <li>
-                <a href="https://www.linkedin.com/in/laure-bouet-2a399b239?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bzix0oYBzTjCSOw69q1vIwQ%3D%3D">
-                    <i  class="fa-brands fa-linkedin"></i>
-                </a><br>
-            </li>
-            <li>
-                <a href="../apropos/contact.html">
-                    <i  class="fa-solid fa-envelope"></i>
-                </a><br>
-            </li>
-        </ul>
+       
         <fieldset>
             <h2 class="formtitle">Message</h2>
             <form action="message.php" method="post">
@@ -389,9 +371,27 @@
     
                 <textarea name="message" placeholder="Message"></textarea>
     
-                <input class="form_input" type="submit" value="envoyer"><br>
+                <button class="button_send" type="submit" >envoyer</button><br>
             </form>
         </fieldset>
+
+        <ul class="list">
+            <li>Mentions légales</li>
+            <li><a href="../apropos/contact.php">&Agrave; propos</a></li>
+            <ul class="icons">
+                <li>
+                    <a class="logo" href="https://www.linkedin.com/in/laure-bouet-2a399b239?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bzix0oYBzTjCSOw69q1vIwQ%3D%3D">
+                        <i  class="fa-brands fa-linkedin"></i>
+                    </a>
+                    </li>
+                    <li>
+                        <a class="logo" href="../apropos/contact.html">
+                        <i  class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        </ul>
+        
     </footer>
 
 </body>
