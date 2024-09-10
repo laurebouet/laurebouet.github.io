@@ -16,7 +16,7 @@ for (var i=0;i<visited.length;i++){
     id.addEventListener(
         "mouseover",
         (event) => {
-        event.target.style.fill ='#F5B994';
+        event.target.style.fill ='#843434';
         // event.target.innerHTML = "pays visité";
 
         setTimeout(() => {

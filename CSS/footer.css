@@ -67,6 +67,7 @@ fieldset, form{
     text-transform: uppercase;
     padding: var(--title-padding);
     border-radius: var(--font-border-title);
+    color: var(--white);
 }
 /*.form_input input[placeholder]{*/
 /*    text-decoration: underline brown;*/
