@@ -23,7 +23,7 @@
     padding: var(--title-padding); /*background texte*/
     /* margin-left: 20%;
     margin-top: 3%; */
-    width: var(--bg-width);
+    width: calc(var(--bg-width)/2);
     /*margin:7%; !*espace photo-texte *!*/
     text-align: center;
     align-items: center;
@@ -39,66 +39,129 @@
 
 /* IMAGES */
 
-.imgscroll {
+.imageMain {
     width: var(--bg-width);
-    background-color: aqua;
+    height: var(--bg-width);
     text-align: center;
     margin: auto;
-    /* position: relative; */
-    
+    margin-top: var(--section-padding);
     display: flex;
     flex-wrap: wrap;
 }
 .pic{
-    margin-top: 1%;
+    margin: 0%;
     border-radius: 7%;
-    /* position: absolute; */
+    opacity: 70%;
 }
 .pictext {
     font-weight: bold;
     text-shadow: 5px 5px 5px black;
-    /* position: relative; */
-    /* margin-bottom: -8%; */
-    /* position: relative; */
-    /* z-index: 2;
-    color: var(--white);
-    background-color: aqua;
-    text-transform: uppercase;
-    text-align: center;
-    align-items: center;
-    margin : auto; */
 } 
-.imageText img{
+#pictanzanie,#picfinlande, #picnetherlands{
     width: 33%;
-    height: 25%;
+    height: 35%;
 }
 #picnorvege, #pictunisie, #picbresil ,#picdk{
-    width: 49.7%;
-    height: 25%;
+    width: 49.5%;
+    height: 30%;
+    position: relative;
+}
+.textPic{
+    position: absolute;
+    color: var(--white);
+    font-weight: bold;
+    /* margin: auto;
+    align-items: center;
+    text-align: center; */
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+}
+#texttanzanie{
+    width: 33%;
+    margin-top: -5%;
+    width: max-content;
+    left: 24%;
+}
+#textfinlande{
+    width: 33%;
+    margin-top: -5%;
+    width: max-content;
+    left: 44%;
+}
+#textnetherlands{
+    width: 33%;
+    margin-top: -5%;
+    width: max-content;
+    right: 24%;
+}
+#textnorvege, #textbresil {
+    margin-top: -5%;
+    width: max-content;
+    left: 29.5%;
+}
+#texttunisie,#textdk{
+    margin-top: -5%;
+    width: max-content;
+    right: 29.5%;
 }
 
-/* pic size */
-/* .largepic img{
-    text-align: center;
+/* buttons */
+
+.btnArt{
+    position: absolute;
+    color: var(--white);
+    font-weight: bold;
+    /* margin: auto;
     align-items: center;
-    margin : auto;
-    width: 30%;
-    height: 16.5%;
+    text-align: center; */
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+
+    /* font-size: 100%; */
+    padding: var(--title-padding);
 }
-.highpic img{
-    text-align: center;
-    align-items: center;
-    margin : auto;
-    width: 20%;
-    height: 20%;
-} */
+.btnArt:hover{
+    border-radius: var(--font-border-text);
+    background-color: var(--bg-color);
+    
+}
+#btnnorvege, #btnbresil {
+    margin-top: -3.5%;
+    width: max-content;
+    left: 31%;
+}
+#btntunisie,#btndk{
+    margin-top: -3.5%;
+    width: max-content;
+    right: 31%;
+}
+#btntanzanie{
+    width: 33%;
+    margin-top: -3.5%;
+    width: max-content;
+    left: 26%;
+}
+#btnfinlande{
+    width: 33%;
+    margin-top: -3.5%;
+    width: max-content;
+    left: 46%;
+}
+#btnnetherlands{
+    width: 33%;
+    margin-top: -3.5%;
+    width: max-content;
+    right: 26%;
+}
 
 
  /* text picture */
-.pictext{
+/* .pictext{
     color: var(--white);
     text-transform: uppercase;
-}
+} */
  /* .pictext{ */
     /* margin: auto;
    
@@ -109,6 +172,8 @@
     /* padding: 1%; */
     
 /* }   */
+
+
 /* #noktext , #picnorvege, #bretext{
     margin-left: 28%;
     margin-top: -6%;
@@ -130,20 +195,4 @@
     margin-top: -6%;
 } */
 
-.imageText> .pictext{
-    
-    margin-top: -7%;
-}
-.span_art a{
-    color: var(--white);
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 100%;
-    padding: var(--title-padding);
-}
-.span_art a:hover{
-    border-radius: var(--font-border-text);
-    background-color: var(--bg-color);
-    
-}
 

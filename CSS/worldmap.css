@@ -5,14 +5,17 @@
 /* TITLES */
 
 .titlemap{
-    position: relative;
-    padding: 3%;
     margin-top: var(--section-padding);
     /*background-color: #a4c2c9;*/
     /*margin-top: 1%;*/
     text-align: center;
     font-family: monospace;
     text-transform: uppercase;
+}
+
+.d3{
+    
+    margin-top: var(--section-padding);
 }
 
 
