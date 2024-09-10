@@ -50,7 +50,6 @@
 
 /* quote */
 .quote p{
-    font-family:     'Sacramento', cursive;
     float: left;
     font-size: 160%;
     position: relative;
@@ -59,7 +58,7 @@
 }
 
 /* BUTTON DESTINATIONS */
-
+/* 
 .d4text h4 a{
     position: relative;
     color: var(--white);
@@ -80,4 +79,4 @@
     width: 15%;
     font-size: 70%;
     /*background-color: #a4c2c9;*/
-}
+/*} */

@@ -1,5 +1,8 @@
+@import "variables.css";
+
 .continent_eu, .continent_am, .continent_af{
     position: relative;
+    margin-top: var(--section-padding) ;
 }
 .art{
     background-color: #fff;
@@ -20,9 +23,9 @@
 }
 
 .textart h3, h6{
-    color: #6fb9b9;
+    color: var(--bg-color);
     padding: 4px;
-    font-size: 80%;
+    font-size: 100%;
     text-align: center;
     text-transform: uppercase;
 }
@@ -46,7 +49,7 @@
     font-size: 90%;
 }
 .travel_time{
-    font-size: 50%;
+    font-size: 60%;
 }
 .continenttitle h3{
     position: relative;

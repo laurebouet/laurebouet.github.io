@@ -6,7 +6,6 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'Epilogue', sans-serif;
     
 }
 /* TITLES */
@@ -14,7 +13,6 @@
 .title{
     margin-top: var(--section-padding);
     text-align: center;
-    font-family: monospace;
     text-transform: uppercase;
 }
 
@@ -36,38 +34,82 @@
 .intro{
     text-align: start;
     padding: 1%;
-}/* IMAGES */
-
-.imgscroll {
-    margin-top: 5%;
-    display: list-item;
-    position: relative;
-    text-align: center;
 }
 
-.largepic img{
 
+/* IMAGES */
+
+.imgscroll {
+    width: var(--bg-width);
+    background-color: aqua;
+    text-align: center;
+    margin: auto;
+    /* position: relative; */
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.pic{
+    margin-top: 1%;
+    border-radius: 7%;
+    /* position: absolute; */
+}
+.pictext {
+    font-weight: bold;
+    text-shadow: 5px 5px 5px black;
+    /* position: relative; */
+    /* margin-bottom: -8%; */
+    /* position: relative; */
+    /* z-index: 2;
+    color: var(--white);
+    background-color: aqua;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    margin : auto; */
+} 
+.imageText img{
+    width: 33%;
+    height: 25%;
+}
+#picnorvege, #pictunisie, #picbresil ,#picdk{
+    width: 49.7%;
+    height: 25%;
+}
+
+/* pic size */
+/* .largepic img{
+    text-align: center;
+    align-items: center;
+    margin : auto;
     width: 30%;
     height: 16.5%;
 }
 .highpic img{
-    width: 19.9%;
-    height: 19.7%;
-}
+    text-align: center;
+    align-items: center;
+    margin : auto;
+    width: 20%;
+    height: 20%;
+} */
 
 
-/* text picture */
+ /* text picture */
 .pictext{
-    font-family: 'Epilogue', sans-serif;
-
-    position: absolute;
-    color: #ffffff;
-    font-weight: 600;
-    margin: 2%;
-    padding: 1%;
+    color: var(--white);
     text-transform: uppercase;
 }
-#noktext, #bretext{
+ /* .pictext{ */
+    /* margin: auto;
+   
+    text-align: center; */
+    /* color: #ffffff; */
+    /* font-weight: 600; */
+    /* margin: 5%; */
+    /* padding: 1%; */
+    
+/* }   */
+/* #noktext , #picnorvege, #bretext{
     margin-left: 28%;
     margin-top: -6%;
 }
@@ -86,18 +128,22 @@
 #ntltext{
     margin-left: 63%;
     margin-top: -6%;
+} */
+
+.imageText> .pictext{
+    
+    margin-top: -7%;
 }
 .span_art a{
-    font-family: 'Epilogue', sans-serif;
-
-    color: #ffffff;
+    color: var(--white);
+    text-transform: uppercase;
     font-weight: 500;
-    font-size: 60%;
-    border: 1px solid white;
-    padding: 5%;
+    font-size: 100%;
+    padding: var(--title-padding);
 }
 .span_art a:hover{
-    background-color: #ffffff;
-    color: black;
+    border-radius: var(--font-border-text);
+    background-color: var(--bg-color);
+    
 }
 
