@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css"/>
     <link rel="stylesheet" type="text/css" href="../css/variables.css"/>
     <link rel="stylesheet" type="text/css" href="../css/destinations.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/photos.css"/>
     <link rel="stylesheet" type="text/css" href="../css/footer.css"/>
 
 
@@ -22,36 +23,44 @@
 
 <body>
 
-    <section id="up" class="barnav">
+    <nav id="up" class="barnav">
         <div class="logo">
-            <a href="./index.html"><img src="../images/logo.jpg" alt="logo"></a>
+            <a href="../index.html"><img src="../images/logo.jpg" alt="logo"></a>
         </div>
         <div class="accueil">
             <ul class="navlinks">
                 <li class="menu">
-                    <a class="homemenu" href="./index.html">Accueil</a>
+                    <a class="homemenu" href="../index.html">Accueil</a>
                 </li>
                 <li class="menu">
-                    <a href="../destinations.html" class="homemenu">Destinations</a>
+                    <a href="../Html/destinations.html" class="homemenu">Destinations</a>
                 </li>
                 <li class="menu">
-                    <a class="homemenu" href="../photos.html">Photos</a>
+                    <a class="homemenu" href="../Html/photos.html">Photos</a>
                 </li>
                 <li class="menu">
-                    <a class="homemenu" href="../apropos.html">contact</a>
+                    <a class="homemenu" href="../Html/apropos.html">Contact</a>
                 </li>
             </ul>
         </div>
 
-    </section>
+    </nav>
 
     <main>
+
+        <section class="searchbar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input id="recherche" type="text" onkeyup="searchbar()" placeholder="votre recherche">
+            <p id="res"><br></p>
+        </section>
+
+
         <section class="continent_eu">
             <div class="continenttitle">
                 <h3 class="art_title">Continent Europ&eacute;en</h3>
             </div>
             <article class="art" >
-                <img class="imgart" src="../images/plage.jpg" alt="polynesie francaise">
+                <img class="imgart" src="../assets/destinations/picDestinations/picpolynesia.jpeg" alt="polynesie francaise">
                 <div class="textart">
                     <a href="">
                         <h3 class="art_title">Polyn&eacute;sie Fran&ccedil;aise,<br> france</h3>
@@ -60,7 +69,7 @@
                 </div>
             </article>
             <article class="art" >
-                <img class="imgart" src="../images/plage.jpg" alt="islande">
+                <img class="imgart" src="../assets/destinations/picDestinations/piciceland.jpeg" alt="islande">
                 <div class="textart">
                     <a href="">
                         <h3 class="art_title">Roadtrip <br>en islande </h3>
@@ -69,7 +78,7 @@
                 </div>
             </article>
             <article class="art" >
-                <img class="imgart" src="../images/picDestinations/piccph.jpg" alt="copenhague">
+                <img class="imgart" src="../assets/destinations/picDestinations/piccph.jpg" alt="copenhague">
                 <div class="textart">
                     <a href="../articles/articleCPH.php">
                         <h3 class="art_title">Copenhague,<br> Danemark</h3>
@@ -78,7 +87,7 @@
                 </div>
             </article>
             <article class="art" >
-                <img class="imgart" src="../images/picDestinations/picbornholm.jpg" alt="bornholm">
+                <img class="imgart" src="../assets/destinations/picDestinations/picbornholm.jpg" alt="bornholm">
                 <div class="textart">
                     <!-- <a href=""></a> -->
                     <h3 class="art_title">&Icirc;le de Bornholm, <br>Danemark</h3>
@@ -86,7 +95,7 @@
                 </div>
             </article>
             <article class="art" >
-                <img class="imgart" src="../images/picDestinations/picaarhus.jpg" alt="Aarhus">
+                <img class="imgart" src="../assets/destinations/picDestinations/picaarhus.jpg" alt="Aarhus">
                 <div class="textart">
                     <!-- <a href=""></a> -->
                     <h3 class="art_title">Aarhus, <br>Danemark</h3>
@@ -94,14 +103,14 @@
                 </div>
             </article>
             <article class="art" >
-                <img class="imgart" src="../images/picDestinations/picfin.jpg" alt="finlande laponie">
+                <img class="imgart" src="../assets/destinations/picDestinations/picfin.jpg" alt="finlande laponie">
                 <div class="textart">
                     <a href="#"><h3 class="art_title">Laponie, <br>Finlande</h3></a>
                     <h6 class="travel_time">Itin&eacute;raire de 1 semaine</h6>
                 </div>
             </article>
             <article class="art" >
-                <img class="imgart" src="../images/picDestinations/picnok1.jpg" alt="">
+                <img class="imgart" src="../assets/destinations/picDestinations/picnok1.jpg" alt="">
                 <div class="textart">
                     <a href="../articles/articleNOK.php">
                         <h3 class="art_title">Bergen et les Fjords, <br>Norv&egrave;ge</h3>
@@ -110,7 +119,7 @@
                 </div>
             </article>
             <article class="art" >
-                <img class="imgart" src="../images/picDestinations/picamsterdam.jpg" alt="">
+                <img class="imgart" src="../assets/destinations/picDestinations/picamsterdam.jpg" alt="">
                 <div class="textart">
                      <a href="../articles/articleNTL.php"><h3 class="art_title">Amsterdam,<br>Pays-Bas</h3></a>
 
@@ -118,7 +127,7 @@
                 </div>
             </article>
             <article class="art" >
-                <img class="imgart" src="../images/picDestinations/picvenise.jpg" alt="">
+                <img class="imgart" src="../assets/destinations/picDestinations/picvenise.jpg" alt="">
                 <div class="textart">
                     <!-- <a href="./articleNOK.php"><h3 class=art_title"></h3></a> -->
                     <h3 class="art_title">Venise et ses îles,<br> Italie</h3>
@@ -126,7 +135,7 @@
                 </div>
             </article>
             <article class="art" >
-                <img class="imgart" src="../images/picDestinations/picflo.jpg" alt="">
+                <img class="imgart" src="../assets/destinations/picDestinations/picflo.jpg" alt="">
                 <div class="textart">
                      <a href="../articles/articleRoadtripIT.php"><h3 class="art_title">Roadtrip en<br> Italie</h3></a>
 
@@ -134,7 +143,7 @@
                 </div>
             </article>
             <article class="art" >
-                <img class="imgart" src="../images/picDestinations/piclipari.jpg" alt="">
+                <img class="imgart" src="../assets/destinations/picDestinations/piclipari.jpg" alt="">
                 <div class="textart">
                     <a href=""><h3 class="art_title">Lipari, Italie <br> les &Icirc;les &Eacute;oliennes </h3></a>
 
@@ -142,7 +151,7 @@
                 </div>
             </article>
             <article class="art" >
-                <img class="imgart" src="../images/picDestinations/picsicile.jpg" alt="">
+                <img class="imgart" src="../assets/destinations/picDestinations/picsicile.jpg" alt="">
                 <div class="textart">
                     <a href=""><h3 class="art_title">Sicile, <br >Italie</h3></a>
 
@@ -150,7 +159,7 @@
                 </div>
             </article>
             <article class="art" >
-                <img class="imgart" src="../images/picDestinations/picten.jpg" alt="">
+                <img class="imgart" src="../assets/destinations/picDestinations/picten.jpg" alt="">
                 <div class="textart">
                     <!-- <a href="./articleNOK.php"><h3 class=art_title"></h3></a> -->
                     <h3 class="art_title">&Icirc;le de Tenerife,<br>Espagne</h3>
@@ -158,7 +167,7 @@
                 </div>
             </article>
             <article class="art" >
-                <img class="imgart" src="../images/picDestinations/picesp.JPG" alt="">
+                <img class="imgart" src="../assets/destinations/picDestinations/picesp.JPG" alt="">
                 <div class="textart">
                     <!-- <a href="./articleNOK.php"><h3 class=art_title"></h3></a> -->
                     <h3 class="art_title">Roadtrip en<br>Espagne</h3>
@@ -166,7 +175,7 @@
                 </div>
             </article>
             <article class="art" >
-                <img class="imgart" src="../images/picDestinations/piccroatie.JPG" alt="">
+                <img class="imgart" src="../assets/destinations/picDestinations/piccroatie.JPG" alt="">
                 <div class="textart">
                     <!-- <a href="./articleNOK.php"><h3 class=art_title"></h3></a> -->
                     <h3 class="art_title">Roadtrip en <br>Croatie</h3>
@@ -174,7 +183,7 @@
                 </div>
             </article>
             <article class="art" >
-                <img class="imgart" src="../images/picDestinations/picmontenegro.JPG" alt="">
+                <img class="imgart" src="../assets/destinations/picDestinations/picmontenegro.JPG" alt="">
                 <div class="textart">
                     <!-- <a href="./articleNOK.php"><h3 class=art_title"></h3></a> -->
                     <h3 class="art_title">Herceg Novi,<br>Mont&eacute;negro</h3>
@@ -182,7 +191,7 @@
                 </div>
             </article>
             <article class="art" >
-                <img class="imgart" src="../images/picDestinations/picbgl.JPG" alt="">
+                <img class="imgart" src="../assets/destinations/picDestinations/picbgl.JPG" alt="">
                 <div class="textart">
                     <!-- <a href="./articleNOK.php"><h3 class=art_title"></h3></a> -->
                     <h3 class="art_title">Roadtrip en<br>Bulgarie</h3>
@@ -190,14 +199,14 @@
                 </div>
             </article>
             <article class="art" >
-                <img class="imgart" src="../images/picDestinations/picnice.jpg" alt="nice">
+                <img class="imgart" src="../assets/destinations/picDestinations/picnice.jpg" alt="nice">
                 <div class="textart">
                     <h3 class="art_title">Nice, les alentours <br> France</h3>
                     <h6 class="travel_time">Itin&eacute;raire de 5 jours</h6>
                 </div>
             </article>
             <article class="art" >
-                <img class="imgart" src="../images/picDestinations/picport.jpg " alt="nice">
+                <img class="imgart" src="../assets/destinations/picDestinations/picport.jpg " alt="nice">
                 <div class="textart">
                     <h3 class="art_title">Roadtrip au<br>Portugal</h3>
                     <h6 class="travel_time">Itin&eacute;raire de 2 semaines</h6>
@@ -210,21 +219,21 @@
 
             </div>
             <article class="art" >
-                <img class="imgart" src="../images/picDestinations/pictan.jpg" alt="tanzanie">
+                <img class="imgart" src="../assets/destinations/picDestinations/pictan.jpg" alt="tanzanie">
                 <div class="textart">
                     <a href="../articles/articleTZ.php"><h3 class="art_title">Roadtrip en <br> Tanzanie</h3></a>
                     <h6 class="travel_time">Itin&eacute;raire de 1 semaine</h6>
                 </div>
             </article>
             <article class="art" >
-                <img class="imgart" src="../images/picDestinations/piczanzibar.jpg" alt="tanzanie">
+                <img class="imgart" src="../assets/destinations/picDestinations/piczanzibar.jpg" alt="tanzanie">
                 <div class="textart">
                     <a href=""><h3 class="art_title">&Icirc;le de Zanzibar,<br>Tanzanie</h3></a>
                     <h6 class="travel_time">Itin&eacute;raire de 1 semaine</h6>
                 </div>
             </article>
             <article class="art" >
-                <img class="imgart" src="../images/picDestinations/pictun.jpg" alt="">
+                <img class="imgart" src="../assets/destinations/picDestinations/pictun.jpg" alt="">
                 <div class="textart">
                     <!-- <a href="./articleNOK.php"><h3 class=art_title"></h3></a> -->
                     <h3 class="art_title">&Icirc;le de Djerba et <br>le Sahara, Tunisie</h3>
@@ -237,7 +246,7 @@
                 <h3 >Continent Américain</h3>
             </div>
             <article class="art" >
-                <img class="imgart" src="../images/picDestinations/picbresil.jpg" alt="">
+                <img class="imgart" src="../assets/destinations/picDestinations/picbresil.jpg" alt="">
                 <div class="textart">
                     <!-- <a href="./articleNOK.php"><h3 class=art_title"></h3></a> -->
                     <h3 class="art_title">Rio de Janeiro, et <br>Paraty Br&eacute;sil</h3>
@@ -245,6 +254,8 @@
                 </div>
             </article>
         </section>      
+    <script src="../JavaScript/searchbar.js"></script>
+
     </main>
 
     <footer class="footer">

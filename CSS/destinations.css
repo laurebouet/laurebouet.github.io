@@ -49,15 +49,33 @@
     font-size: 90%;
 }
 .travel_time{
-    font-size: 0%;
+    font-size: 80%;
+    font-weight:400;
 }
 .continenttitle h3{
     position: relative;
-    margin-top: 8%;
+    /* margin-top: var(--section-padding); */
     /* background-color: #6fb9b9; */
-    padding: 5%;
+    /* padding: var(--section-padding); */
     text-transform: uppercase;
     text-align: center;
     /* float: left; */
 }
  
+
+/* SEARCH BAR */
+.searchbar{
+    margin-top: calc(var(--section-padding)*2);
+    margin-left: 10%;
+}
+.searchbar h3{
+    text-decoration:overline;
+    padding: 10px;
+}
+.searchbar i{
+    font-size: 10px;
+    padding: 10px;
+}
+#res{
+    font-size: 12px;
+}

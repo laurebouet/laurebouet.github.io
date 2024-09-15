@@ -52,11 +52,11 @@
 .pic{
     margin: 0%;
     border-radius: 7%;
-    opacity: 70%;
+    opacity: 90%;
 }
 .pictext {
     font-weight: bold;
-    text-shadow: 5px 5px 5px black;
+    text-shadow: 2px 2px 2px black;
 } 
 #pictanzanie,#picfinlande, #picnetherlands{
     width: 33%;
@@ -68,6 +68,7 @@
     position: relative;
 }
 .textPic{
+    /* opacity: 100%; */
     position: absolute;
     color: var(--white);
     font-weight: bold;
@@ -99,7 +100,7 @@
 #textnorvege, #textbresil {
     margin-top: -5%;
     width: max-content;
-    left: 29.5%;
+    left: 28%;
 }
 #texttunisie,#textdk{
     margin-top: -5%;
@@ -131,7 +132,7 @@
 #btnnorvege, #btnbresil {
     margin-top: -3.5%;
     width: max-content;
-    left: 31%;
+    left: 30%;
 }
 #btntunisie,#btndk{
     margin-top: -3.5%;

@@ -18,13 +18,13 @@
     text-align: center;
 }
 .navlinks{
-    font-weight: 400;
+    /* font-weight: 40%; */
     list-style: none;
     display: inline-flex;
     text-transform: uppercase;
 } 
-.navlinks .menu{
-    margin: 10%;
+.menu{
+    margin-left: 10%;
 }
 
 .homemenu{
