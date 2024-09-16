@@ -6,6 +6,7 @@ function search(){
     filter = input.value.toUpperCase();
     ul = document.getElementById("photos");
     li = ul.getElementsByTagName("li");
+    console.log("title "+ ul.textContent)
     for(i=0;i<li.length;i++){
         a = li[i].getElementsByTagName("a")[0];
         txtvalue = a.textContent || a.innerText;

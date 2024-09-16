@@ -29,6 +29,7 @@
     align-items: center;
     margin: auto;
     margin-top: var(--section-padding);
+
     /*margin-left: 60%; !*deplacement vers la droite*!*/
     /*width: 60%; !*espace pour le texte*!*/
 }
