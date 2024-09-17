@@ -27,11 +27,12 @@ footer{
     /* display: block; */
     /*padding: 10%;*/
 }
-.footer ul, .footer fieldset{
-    margin-left: 16%;
+ .footer fieldset, .footer ul{
+    margin-left: auto;
+    margin-top: 5%;
 }
 .icons li a{
-    margin: 20%;
+    /* margin: 20%; */
     color: var(--color);
 }
 .logo{
@@ -72,3 +73,11 @@ fieldset, form{
 /*.form_input input[placeholder]{*/
 /*    text-decoration: underline brown;*/
 /*}*/
+
+.barFooter{
+    display: block;
+    padding: 10%;
+    position: relative;
+    z-index: 1;
+    /* margin-left: 10%; */
+}
