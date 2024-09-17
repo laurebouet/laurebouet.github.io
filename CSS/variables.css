@@ -18,6 +18,10 @@
     --title-padding : 10px;
     --section-padding : 8%;
 
+    /* margin */
+
+    --left-margin : 9.5%;
+
     /* border */
     --font-border-title : 50px;
     --font-border-text : 10px;

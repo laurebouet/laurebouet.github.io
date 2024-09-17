@@ -8,6 +8,18 @@
     text-decoration: none;
     
 }
+
+/* counter countries */
+
+.countnumber{
+    color: var(--white);
+    font-size: 200%;
+    position: absolute;
+    top: 50%; right: 50%;
+    transform:translate(50%,-50%); ;
+    text-transform: uppercase;
+}
+
 /* TITLES */
 
 .title{
