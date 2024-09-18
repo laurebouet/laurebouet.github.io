@@ -12,17 +12,17 @@ visited =
 for (var i=0;i<visited.length;i++){
     const id = document.getElementById(visited[i]);
     // var color = document.getElementById("legend");
+    // var color = document.getElementById("legend");
 
     id.addEventListener(
         "mouseover",
         (event) => {
         event.target.style.fill ='#843434';
-        // event.target.innerHTML = "pays visité";
-
-        setTimeout(() => {
-            event.target.style.fill = "black";
-        }, 200);
+    
         },
         true
       );
+    id.addEventListener(
+      "mouseout", (event) => { 
+        event.target.style.fill = "black"; });
 }

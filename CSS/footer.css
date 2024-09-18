@@ -19,15 +19,16 @@ footer{
     padding: 3%;
     list-style: none;
     display: inline-flex
+    display: inline-flex
 }
-.footer li, .footer a{
+footer li, footer a{
     /* text-align: start; */
     color: var(--black);
     text-decoration: none;
     /* display: block; */
     /*padding: 10%;*/
 }
- .footer fieldset, .footer ul{
+footer fieldset, footer ul{
     margin: auto;
     margin-top: 5%;
 }
@@ -92,4 +93,9 @@ fieldset, form{
     position: relative;
     z-index: 1;
     /* margin-left: 10%; */
+}
+.barFooter a{
+    
+    text-decoration: none;
+    color: var(--black);
 }
