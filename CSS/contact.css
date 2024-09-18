@@ -1,60 +1,3 @@
-/* COMMUN A TOUTES LES PAGES */
-
-*{
-    text-decoration: none;
-    color: #000;
-    margin: 0;
-    padding: 0;
-    font-family: 'Epilogue', sans-serif;
-}
-.accueil{
-    text-align: center;
-    
-}
-.navlinks{   
-    margin: 3%;
-    font-weight: 200;
-    list-style: none;
-    display: inline-flex;
-    text-transform: uppercase;
-}
-.logo{
-    position:absolute;
-    width:max-content;
-}
-.navlinks .menu{
-    margin: 10px 30px;
-}
-img{
-    width: 100px;
-    height: 100px;
-    position: relative;
-}
-
-.menu a:hover{
-    text-decoration: underline #6fb9b9 2px;
-}
-
-
-/* FOOTER */
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-main{
-    flex-grow: 1;
-}
-footer{
-    padding: 10px;
-    text-align: center;
-    list-style: none; 
-}
-.footer li{
-    margin: 10px;
-    display: inline;
-}
-
 
 /* UNIQUEMENT POUR CETTE PAGE */
 
@@ -70,11 +13,9 @@ footer{
     margin: 10px;
     padding: 10px;
 }
-<<<<<<< Updated upstream
 .contact p{
     margin:  10px 20px;
 }
-=======
 
 
 .title{
@@ -92,8 +33,3 @@ footer{
     border-radius: var(--font-border-text);
     width: calc(var(--article-width));
 }
-
-
-
-
->>>>>>> Stashed changes
