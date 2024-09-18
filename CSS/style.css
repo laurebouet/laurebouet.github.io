@@ -37,7 +37,7 @@
 .homemenu:hover{
     background-color: var(--bg-color); ;
     padding: var(--title-padding);
-    border-radius: var(--font-border-title);
+    border-radius: var(--font-border-text);
 }
 
 /* LOGO */
@@ -59,3 +59,27 @@
     background-size: cover;
     height: 100vh;
 } 
+
+
+
+/* SEARCH BAR */
+.searchbar{
+    
+    background-color: var(--bg-color);
+    border-radius: var(--font-border-text);
+    width: var(--article-width);
+    height: 5%;
+    margin-top: calc(var(--section-padding)*2);
+    margin-left: var(--left-margin);
+}
+#recherche{
+    margin-top: 5%;
+    background-color: var(--bg-color);
+    /* border: none;
+    outline: none; */
+}
+#res{
+    color: var(--black);
+    font-size: 12px;
+    margin-left: 10%;
+}

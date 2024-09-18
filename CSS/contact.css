@@ -70,6 +70,30 @@ footer{
     margin: 10px;
     padding: 10px;
 }
+<<<<<<< Updated upstream
 .contact p{
     margin:  10px 20px;
 }
+=======
+
+
+.title{
+    margin-top: calc(var(--section-padding)*2);
+    text-align: center;
+    text-transform: uppercase;
+}
+/* 
+.photo{
+    
+    background-color: rgb(59, 154, 237);} */
+
+
+.photo img{
+    border-radius: var(--font-border-text);
+    width: calc(var(--article-width));
+}
+
+
+
+
+>>>>>>> Stashed changes

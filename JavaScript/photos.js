@@ -6,9 +6,13 @@ function search(){
     filter = input.value.toUpperCase();
     ul = document.getElementById("photos");
     li = ul.getElementsByTagName("li");
-    console.log("title "+ ul.textContent)
+
+    console.log("title "+ ul.textContent);
+    a = li.querySelector('alt')
+
     for(i=0;i<li.length;i++){
-        a = li[i].getElementsByTagName("a")[0];
+        // a = li[i];
+        console.log("a "+a);
         txtvalue = a.textContent || a.innerText;
         if(txtvalue.toUpperCase().indexOf(filter)> -1){
             li[i].style.display = "";

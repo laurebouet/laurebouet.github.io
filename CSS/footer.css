@@ -19,9 +19,8 @@ footer{
     padding: 3%;
     list-style: none;
     display: inline-flex
-    display: inline-flex
 }
-footer li, footer a{
+.footer li, .footer a{
     /* text-align: start; */
     color: var(--black);
     text-decoration: none;
@@ -88,6 +87,7 @@ fieldset, form{
 /*}*/
 
 .barFooter{
+    
     display: block;
     padding: 10%;
     position: relative;

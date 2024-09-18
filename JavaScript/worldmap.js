@@ -11,14 +11,11 @@ visited =
 
 for (var i=0;i<visited.length;i++){
     const id = document.getElementById(visited[i]);
-    // var color = document.getElementById("legend");
-    // var color = document.getElementById("legend");
 
     id.addEventListener(
         "mouseover",
         (event) => {
         event.target.style.fill ='#843434';
-    
         },
         true
       );

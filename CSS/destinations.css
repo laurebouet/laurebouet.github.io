@@ -63,24 +63,3 @@
 }
  
 
-/* SEARCH BAR */
-.searchbar{
-    
-    background-color: var(--bg-color);
-    border-radius: var(--font-border-text);
-    width: var(--article-width);
-    height: 5%;
-    /* margin-top: var(--section-padding); */
-    margin-left: var(--left-margin);
-}
-#recherche{
-    margin-top: 5%;
-    background-color: var(--bg-color);
-    border: none;
-    outline: none;
-}
-#res{
-    color: var(--black);
-    font-size: 12px;
-    margin-left: 10%;
-}

@@ -1,4 +1,4 @@
-/* SEARCH BAR */
+/* SEARCH BAR
 .searchbar{
     margin-top: 10%;
     margin-left: 10%;
@@ -13,9 +13,11 @@
 }
 #res{
     font-size: 12px;
-}
+} */
+
+
 /* SEARCH AVEC DICO*/
-.dico ul{
+/* .dico ul{
     position: absolute;
     display: inline-flex;
     list-style: none;
@@ -31,35 +33,31 @@
 .dico .paystitre{
     margin: 10px 10px;
     text-decoration: none;
-}
-#photos li{
+} */
+/* #photos li{
     list-style: none;
-}
+} */
 #photos li:hover{
     transform: scale(1.06);
 }
 #photos li a{
     display: none;
 }
+
+
 /* TAILLE DES PHOTOS */
 #photos {
     margin-top: 10%;
 }
-#photos .A,#photos .P,#photos .F,#photos .K{
+#photos img{
+    border-radius: var(--font-border-text);
+
+}
+#photos .pictures{
     margin-top: 2%;
     margin-left: 10%; 
-    float: left;
-    width: 100px;
-    height: 100px;
+    /* float: left; */
+    width: 70px;
+    height: 70px;
     display: inline-flex;
-    /*width: 22%;*/
-    /*height: 22%;*/
 }
-/*#photos li .droite{*/
-/*    margin-top: 2%;*/
-/*    margin-right: 10%;*/
-/*    float: right;*/
-/*    width: 22%;*/
-/*    height: 22%;*/
-/*}*/
-
