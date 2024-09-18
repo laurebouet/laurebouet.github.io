@@ -42,11 +42,10 @@
 
 /* LOGO */
 
-.logo img{
+.logobar img{
     position:relative;
     z-index: 2;
-    margin-top: -30%;
-    /*width:max-content;*/
+    /* margin-top: -30%; */
     width: 125px;
     height: 125px;
 }
@@ -59,33 +58,4 @@
     position: relative;
     background-size: cover;
     height: 100vh;
-    /*width: 70%;*/
-    /*margin-left: 30%;*/
-    
-     /*margin-top: 10%;*/
 } 
-/*.headerpic .maintitle{*/
-/*    !*position: absolute;*!*/
-/*    z-index: 1;*/
-/*    color: #ffffff;*/
-/*    border-color: #6fb9b9;*/
-/*    border: 3px;*/
-/*    font-size: 300%;*/
-/*    text-align: center;*/
-/*    align-items: center;*/
-/*    margin-top: -25%;*/
-/*    margin-left: 20%;*/
-/*    font-family: 'Epilogue', sans-serif;*/
-/*    text-transform: uppercase;*/
-/*}*/
-
-/*.headerpic .main_title{*/
-/*    color: #a4c2c9;*/
-/*    left: 40%;*/
-/*    top: 30%;*/
-/*}*/
-
-
-
-
-/*  */

@@ -25,6 +25,29 @@
 
 <body>
 
+    <nav id="up" class="barnav">
+        <div class="logobar">
+            <a href="../index.html"><img src="../images/logo.jpg" alt="logo"></a>
+        </div>
+        <div class="accueil">
+            <ul class="navlinks">
+                <li class="menu">
+                    <a class="homemenu" href="./index.html">Accueil</a>
+                </li>
+                <li class="menu">
+                    <a href="./Html/destinations.html" class="homemenu">Destinations</a>
+                </li>
+                <li class="menu">
+                    <a class="homemenu" href="./Html/photos.html">Photos</a>
+                </li>
+                <li class="menu">
+                    <a class="homemenu" href="./Html/apropos.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    
     <main>
         <section class="searchbar">
             <h3>Recherche d'une photo par mot-clé</h3>
@@ -106,5 +129,48 @@
     <script src="../JavaScript/photos.js"></script>
 
 </body>
+
+<footer class="footer">
+       
+    <fieldset>
+        <h2 class="formtitle">Message</h2>
+        <form action="message.php" method="post">
+            <input class="form_input" type="text" name="nom" placeholder="Nom"><br>
+
+            <input class="form_input" type="text" name="prénom" placeholder="Prénom"><br>
+
+            <input class="form_input" type="email" name="email" placeholder="Email"><br>
+
+            <textarea name="message" placeholder="Message"></textarea>
+
+            <button class="button_send" type="submit" >envoyer</button><br>
+        </form>
+    </fieldset>
+    
+    <ul>
+        <li class="barFooter"><a href="./index.html">Accueil</a></li>
+        <li class="barFooter"><a href="./Html/destinations.html">Destinations</a></li>
+        <li class="barFooter"><a href="./Html/photos.html">Photos</a></li>
+        <li class="barFooter"><a href="./Html/apropos.html">Contact</a></li>
+    </ul>
+
+    <ul class="list">
+        <li class="barFooter">Mentions légales</li>
+        <li class="barFooter"><a href="../apropos/contact.php">&Agrave; propos</a></li>
+        <li class="icons">
+            <li>
+                <a class="logo" href="https://www.linkedin.com/in/laure-bouet-2a399b239?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bzix0oYBzTjCSOw69q1vIwQ%3D%3D">
+                    <i  class="fa-brands fa-linkedin"></i>
+                </a>
+                <!-- </li>
+                <li> -->
+                    <a class="logo" href="../apropos/contact.html">
+                    <i  class="fa-solid fa-envelope"></i>
+                </a>
+            </li>
+        </li>
+    </ul>
+    
+</footer>
 
 </html>

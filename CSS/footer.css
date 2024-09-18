@@ -18,7 +18,7 @@ footer{
     margin-top: var(--section-padding);
     padding: 3%;
     list-style: none;
-    display: inline-flex;
+    display: inline-flex
 }
 .footer li, .footer a{
     /* text-align: start; */
@@ -28,18 +28,25 @@ footer{
     /*padding: 10%;*/
 }
  .footer fieldset, .footer ul{
-    margin-left: auto;
+    margin: auto;
     margin-top: 5%;
 }
-.icons li a{
+.icons .logo {
     /* margin: 20%; */
+    /* margin-top: 6%; */
+    width:max-content;
+    padding: var(--title-padding);
+    text-decoration: none;
+    list-style: none;
+    display: inline-flex;
+}
+.logo i{
+    padding: var(--title-padding);
+    font-size: 150%;
     color: var(--color);
 }
-.logo{
-    margin-top: 6%;
-    width:max-content;
-    /* display: inline-flex; */
-}
+
+
 /* formulaire */
 fieldset .formtitle{
     text-transform: uppercase;
@@ -70,6 +77,11 @@ fieldset, form{
     border-radius: var(--font-border-title);
     color: var(--white);
 }
+
+
+
+
+
 /*.form_input input[placeholder]{*/
 /*    text-decoration: underline brown;*/
 /*}*/
