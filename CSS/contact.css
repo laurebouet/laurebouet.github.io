@@ -1,75 +1,33 @@
-/* COMMUN A TOUTES LES PAGES */
-
-*{
-    text-decoration: none;
-    color: #000;
-    margin: 0;
-    padding: 0;
-    font-family: 'Epilogue', sans-serif;
-}
-.accueil{
-    text-align: center;
-    
-}
-.navlinks{   
-    margin: 3%;
-    font-weight: 200;
-    list-style: none;
-    display: inline-flex;
-    text-transform: uppercase;
-}
-.logo{
-    position:absolute;
-    width:max-content;
-}
-.navlinks .menu{
-    margin: 10px 30px;
-}
-img{
-    width: 100px;
-    height: 100px;
-    position: relative;
-}
-
-.menu a:hover{
-    text-decoration: underline #6fb9b9 2px;
-}
-
-
-/* FOOTER */
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-main{
-    flex-grow: 1;
-}
-footer{
-    padding: 10px;
-    text-align: center;
-    list-style: none; 
-}
-.footer li{
-    margin: 10px;
-    display: inline;
-}
+@import "variables.css";
 
 
 /* UNIQUEMENT POUR CETTE PAGE */
 
+main{
+    width: var(--bg-width);
+    margin: auto;
+}
+.container{
+    margin: var(--section-padding);
+}
 
-.contact{
-    list-style: none;
-    background-color: #a4c2c9;
-    width: max-content;
-    margin-top: 5%;
-    margin-left: 15%;
+
+.title{
+    margin-top: calc(var(--section-padding)*2);
+    text-align: center;
+    text-transform: uppercase;
 }
-.contact li, h4{
-    margin: 10px;
-    padding: 10px;
+/* 
+.photo{
+    
+    background-color: rgb(59, 154, 237);} */
+
+
+.photo img{
+    border-radius: var(--font-border-title);
+    width: calc(var(--article-width));
 }
-.contact p{
-    margin:  10px 20px;
-}
+
+
+
+
