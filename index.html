@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <!-- css -->
-    <link rel="stylesheet" type="text/css" href="../style.css"/>
-    <link rel="stylesheet" type="text/css" href="../variables.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/variables.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/homepage.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/worldmap.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/footer.css"/>
+    
+    
     <!-- favicon -->
     <link rel="icon" href="../assets/pics/favicon.ico" />
     <!-- icons -->
@@ -12,156 +17,95 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comme:wght@300&family=Dancing+Script:wght@500&family=Great+Vibes&family=Sacramento&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300&family=Felipa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
-    <section id="up" class="barnav">
-        <div class="logo">
-            <a href="../main/main.php"><img src="../images/logo.jpg" alt="logo"></a>
+    <nav id="up" class="barnav">
+        <div class="logobar">
+            <a href="../index.html"><img src="../images/logo.jpg" alt="logo"></a>
         </div>
         <div class="accueil">
             <ul class="navlinks">
                 <li class="menu">
-                    <a class="homemenu" href="../main/main.php">Accueil</a>
+                    <a class="homemenu" href="./index.html">Accueil</a>
                 </li>
                 <li class="menu">
-                    <a href="../destinations/destination.php" class="homemenu">Destinations</a>
-<!--                    <ul class="sousmenu">-->
-<!--                        <li><a href="#">europe</a></li>-->
-<!--                        <li><a href="#">afrique</a></li>-->
-<!--                        <li><a href="#">am&eacute;rique du sud</a></li>-->
-<!--                    </ul>-->
+                    <a href="./Html/destinations.html" class="homemenu">Destinations</a>
                 </li>
                 <li class="menu">
-                    <a class="homemenu" href="../photos/photos.php">Photos</a>
+                    <a class="homemenu" href="./Html/photos.html">Photos</a>
                 </li>
                 <li class="menu">
-                    <a class="homemenu" href="../apropos/contact.php">contact</a>
+                    <a class="homemenu" href="./Html/apropos.html">Contact</a>
                 </li>
             </ul>
         </div>
 
+    </nav>
+
+    <section class="header">
+        <section onload="counter()">
+            <h1 class="countnumber"><span  id="countnumber"></span> pays visit&eacute;s</h1>
+        </section>
     </section>
-
-
-
+    
     <section class="d1">
 
-        <h2 class="title">Pr&eacute;sentation</h2>
-        <article class="d1text">
-
-            <p class="intro">
-<!--                Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les structures propres à une langue (conjugaisons, construction et association des phrases…)1. Un texte n'a pas de longueur déterminée sauf dans le cas de poèmes à forme fixe comme le sonnet ou le haïku.-->
-
-<!--                L'étude formelle des textes s'appuie sur la linguistique, qui est l'approche scientifique du langage.-->
-<!--                Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les structures propres à une langue (conjugaisons, construction et association des phrases…)1. Un texte n'a pas de longueur déterminée sauf dans le cas de poèmes à forme fixe comme le sonnet ou le haïku.-->
-
-<!--                L'étude formelle des textes s'appuie sur la linguistique, qui est l'approche scientifique du langage.-->
-                Depuis mon enfance, j'ai eu l'opportunité de voyager et découvrir de nouveaux pays et cultures.
-                <br>
-<!--                Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les structures propres à une langue (conjugaisons, construction et association des phrases…)1. Un texte n'a pas de longueur déterminée sauf dans le cas de poèmes à forme fixe comme le sonnet ou le haïku.&ndash;&gt;-->
-
-<!--                              L'étude formelle des textes s'appuie sur la linguistique, qui est l'approche scientifique du langage.&ndash;&gt;-->
-<!--                               Un-->
-
-                <!--                Je suis &eacute;tudiante en Licence MIAGE &agrave; l'Universit&eacute; C&ocirc;te d'Azur.-->
-<!--                <br>-->
-<!--                La cr&eacute;ation de ce site me permet-->
-<!--                de développer mes comp&eacute;tances en d&eacute;veloppement web.-->
-<!--                <br>-->
-<!--                <br>-->
-
-<!--                Ce site est un aper&ccedil;u de mes voyages.-->
-<!--                <br>-->
-                Voyager est pour moi une ouverture au monde. Rencontrer des personnes d'horizon différentes et
-                sans doute l'une des choses que je préfére. Chaque pays, a une histoire et donc
-                des id&eacute;ologies différentes.
-            </p>
-        </article>
         <h2 class="title"> Article &Agrave; la une</h2>
-        <div class="imgscroll">
-            <ul>
-                <li class="largepic">
+        <div class="imageMain">
+                <div class ="imageText">
+                    
                     <img class="pic" id="picnorvege" src="../images/norvege.jpg" alt="norvège">
-                    <p class="pictext" id="noktext">
-                        Voyage en Norvège
-                        <br><br>
-                        <span class="span_art">
-                            <a href="../articles/articleNOK.php">d&eacute;couvrir</a></span>
-                    </p>
+                    <p class="textPic" id="textnorvege">Voyage en Norvège</p>
+                    <div class="btnArt" id="btnnorvege">d&eacute;couvrir</div>
+                    
                     <img class="pic" id="pictunisie" src="../images/tunsahara.jpg" alt="tunisie">
-                    <p class="pictext" id="tuntext">
-                        Voyage en Tunisie
-                    <br><br>
-                        <span class="span_art">
-                            <a href="#">d&eacute;couvrir</a></span>
-                    </p>
-                </li>
-                <li class="highpic">
+                    <p class="textPic" id="texttunisie">Voyage en Tunisie</p>
+                    <div class="btnArt" id="btntunisie">d&eacute;couvrir</div>
+
+
                     <img class="pic" id="pictanzanie" src="../images/firetann.jpg" alt="tanzanie">
-                    <p class="pictext" id="tantext">
-                    Voyage en Tanzanie
-                    <br><br>
-                        <span class="span_art">
-                            <a href="../articles/articleTZ.php">d&eacute;couvrir</a>
-                        </span></p>
+                    <p class="textPic" id="texttanzanie">Voyage en Tanzanie</p>
+                    <div class="btnArt" id="btntanzanie">d&eacute;couvrir</div>
+                    
+
                     <img class="pic" id="picfinlande" src="../images/finlande.jpg" alt="finlande">
-                    <p class="pictext" id="fintext">
-                    Voyage en Laponie
-                    <br><br>
-                        <span class="span_art">
-                            <a href="#">d&eacute;couvrir</a>
-                        </span></p>
+                    <p class="textPic" id="textfinlande">Voyage en Finlande</p>
+                    <div class="btnArt" id="btnfinlande">d&eacute;couvrir</div>
+                    
                     <img class="pic" id="picnetherlands" src="../images/netherlands.jpg" alt="pays-bas">
-                    <p class="pictext" id="ntltext">
-                    Voyage aux Pays-Bas
-                    <br><br>
-                        <span class="span_art">
-                            <a href="../articles/articleNTL.php">d&eacute;couvrir</a>
-                        </span>
-                    </p>
-
-                </li>
-                <li class="largepic">
-                    <img class="pic" id="picbresil" src="../images/bresil.jpg" alt="bresil">
-                    <p class="pictext" id="bretext">
-                        Voyage au brésil
-                    <br><br>
-                        <span class="span_art">
-                            <a href="#">d&eacute;couvrir</a></span>
-                    </p>
+                    <p class="textPic" id="textnetherlands">Voyage au Pays-Bas</p>
+                    <div class="btnArt" id="btnnetherlands">d&eacute;couvrir</div>
+                    
+                    <img class="pic" id="picbresil" src="./images/bresil.jpg" alt="bresil">
+                    <p class="textPic" id="textbresil">Voyage au Br&eacute;sil</p>
+                    <div class="btnArt" id="btnbresil">d&eacute;couvrir</div>
+                    
                     <img class="pic" id="picdk" src="../images/dkpic.jpg" alt="copenhague">
-                    <p class="pictext" id="dktext">
-                        Voyage au danemark
-                    <br><br>
-                        <span class="span_art">
-                            <a href="../articles/articleCPH.php">d&eacute;couvrir</a></span>
-                    </p>
+                    <p class="textPic" id="textdk">Voyage au Danemark</p>
+                    <div class="btnArt" id="btndk">d&eacute;couvrir</div>
 
-                </li>
-            </ul>
+            </div>
         </div>
 
     </section>
 
     <section class="d3">
 
-        <h2 class="titlemap">carte du monde</h2>
-        <div class="quote">
+        <h2 class="title">carte du monde</h2>
+        <!-- <div class="quote">
             <p>L'aventure en vaut la peine - Aristote</p>
-        </div>
+        </div> -->
     
-        <div class="d2">
+        <!-- <div class="d2">
             <img class="tan" src="../images/soleil_tan.jpg" alt="coucher de soleil">
             <pre>
                         Photos
                         Voyages
                         Destinations
             </pre>
-        </div>
+        </div> -->
     
         <div class="map" id="map">
             <div class="mapimg" onclick="">
@@ -346,38 +290,15 @@
                     </g>
                 </svg>
             </div>
-            <!-- <p id="legend"></p> -->
         </div>
-        <div class="d4text">
-            <h4 class="button"><a href="../destinations/destination.php">Destinations</a></h4>
-            <p class="text">
-                Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent,
-                porteur de sens et utilisant les structures propres à une langue (conjugaisons, construction et association
-                des phrases…)1.
-            </p>
-        </div>
-        <script src="worldmap.js"></script>
+        <script src="../JavaScript/worldmap.js"></script>
+        
+        <script src="../JavaScript/counter.js"></script>
     </section>
     
 
     <footer class="footer">
-        <ul class="list">
-            <li>Mentions légales</li>
-            <li><a href="../apropos/contact.php">&Agrave; propos</a></li>
-            <li>Contact</li>
-        </ul>
-        <ul class="icons">
-            <li>
-                <a href="https://www.linkedin.com/in/laure-bouet-2a399b239?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bzix0oYBzTjCSOw69q1vIwQ%3D%3D">
-                    <i  class="fa-brands fa-linkedin"></i>
-                </a><br>
-            </li>
-            <li>
-                <a href="../apropos/contact.html">
-                    <i  class="fa-solid fa-envelope"></i>
-                </a><br>
-            </li>
-        </ul>
+       
         <fieldset>
             <h2 class="formtitle">Message</h2>
             <form action="message.php" method="post">
@@ -389,9 +310,34 @@
     
                 <textarea name="message" placeholder="Message"></textarea>
     
-                <input class="form_input" type="submit" value="envoyer"><br>
+                <button class="button_send" type="submit" >envoyer</button><br>
             </form>
         </fieldset>
+        
+        <ul>
+            <li class="barFooter"><a href="./index.html">Accueil</a></li>
+            <li class="barFooter"><a href="./Html/destinations.html">Destinations</a></li>
+            <li class="barFooter"><a href="./Html/photos.html">Photos</a></li>
+            <li class="barFooter"><a href="./Html/apropos.html">Contact</a></li>
+        </ul>
+
+        <ul class="list">
+            <li class="barFooter">Mentions légales</li>
+            <li class="barFooter"><a href="../apropos/contact.php">&Agrave; propos</a></li>
+            <li class="icons">
+                <li>
+                    <a class="logo" href="https://www.linkedin.com/in/laure-bouet-2a399b239?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bzix0oYBzTjCSOw69q1vIwQ%3D%3D">
+                        <i  class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <!-- </li>
+                    <li> -->
+                        <a class="logo" href="../apropos/contact.html">
+                        <i  class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+            </li>
+        </ul>
+        
     </footer>
 
 </body>

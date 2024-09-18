@@ -1,0 +1,61 @@
+@import "variables.css";
+
+/* NAV BAR */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.barnav{
+    display: inline-flex;
+    position: absolute;
+    z-index: 1;
+    
+}
+.accueil{
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+.navlinks{
+    /* font-weight: 40%; */
+    list-style: none;
+    display: inline-flex;
+    text-transform: uppercase;
+} 
+.menu{
+    margin-left: 10%;
+}
+
+.homemenu{
+    color: #000000;
+    text-decoration: none;
+    /* font-weight: bold; */
+    font-weight: bolder;
+    padding: var(--title-padding);
+}
+.homemenu:hover{
+    background-color: var(--bg-color); ;
+    padding: var(--title-padding);
+    border-radius: var(--font-border-title);
+}
+
+/* LOGO */
+
+.logobar img{
+    position:relative;
+    z-index: 2;
+    /* margin-top: -30%; */
+    width: 125px;
+    height: 125px;
+}
+
+
+/* IMAGE BACKGROUND */
+.header{
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../images/back.jpg"); 
+    background-position: 100%;
+    position: relative;
+    background-size: cover;
+    height: 100vh;
+} 
