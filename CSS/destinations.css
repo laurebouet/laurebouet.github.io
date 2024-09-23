@@ -4,13 +4,19 @@
     position: relative;
     margin-top: var(--section-padding) ;
 } */
+
+article{
+    display : inline-block;
+    position: absolute;
+}
+
 .art{
     background-color: #fff;
     position: relative;
     width: var(--article-width);
     height: 7.5%;
     margin-left: var(--left-margin);
-    display:inline-block;
+    
     /* float: left; */
     margin-top: 5%;
     border-radius:10px 10px 10px 10px;

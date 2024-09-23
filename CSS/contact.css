@@ -1,11 +1,14 @@
 
 /* UNIQUEMENT POUR CETTE PAGE */
 
+main{
+    width: var(--bg-width);
+    margin: auto;
+}
 
 .contact{
     list-style: none;
     background-color: #a4c2c9;
-    width: max-content;
     margin-top: 5%;
     margin-left: 15%;
 }
