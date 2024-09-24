@@ -41,32 +41,23 @@
 }
 
 .iconbar{
-    
+    color: var(--black);
     display: none;
-    text-decoration: none;
 } 
 
+.iconbar a i{
+    color: var(--black);
+    text-decoration: none;
+}
 /* LOGO */
 
-.logobar img{
+.logobar img, #menuicon{
     position:relative;
     z-index: 2;
     /* margin-top: -30%; */
     width: 125px;
     height: 125px;
 }
-
-
-/* IMAGE BACKGROUND */
-.header{
-    /* background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../images/back.jpg");  */
-    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4),rgba(0,0,0,0.3)), url("../assets/roadiceland-bg.jpeg"); 
-    background-position: 100%;
-    position: relative;
-    background-size: cover;
-    height: 100vh;
-} 
-
 
 
 /* SEARCH BAR */
@@ -99,8 +90,13 @@
     .barnav{
         width: 100%;
         text-decoration: none;
+        /* background-color: aquamarine; */
+
     }
-    .navlinks{
+    /* .accueil .iconbar{
+        right: 10%;
+    } */
+    .iconbar{
         display: inline-flex;
         /* margin-left: 90%; */
         /* background-color: aqua; */
@@ -108,22 +104,25 @@
     .menu{
         display: none;
     }
-    .iconbar{
+    #menucross{
+        display: none;
+    }
+    #menubar{
+        padding: 80%;
+        background-color: aqua;
+    }
+    /* .iconbar{
         display: inline-flex;
         color: var(--black);
-    }
-    .iconbar a{
+    } */
+    /* .iconbar a{
         color: var(--black);
     }
 
     .logobar{
         width: 100px;
         height: 100px;
-    }
-
-    /* article{
-        display: inline-block;
-        position: relative;
     } */
+
     
 }

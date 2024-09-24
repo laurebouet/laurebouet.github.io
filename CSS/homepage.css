@@ -11,14 +11,28 @@
 
 /* counter countries */
 
-.countnumber{
-    /* color: var(--white); */
-    font-size: 200%;
+.header h1{
+    color: var(--white);
+    font-size: 150%;
     position: absolute;
     top: 50%; right: 50%;
     transform:translate(50%,-50%); ;
     text-transform: uppercase;
 }
+
+
+/* IMAGE BACKGROUND */
+.header{
+    /* background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../images/back.jpg");  */
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4),rgba(0,0,0,0.3)), url("../assets/roadiceland-bg.jpeg"); 
+    background-position: 100%;
+    position: relative;
+    background-size: cover;
+    height: 100vh;
+} 
+
+
+
 
 /* TITLES */
 
@@ -60,8 +74,8 @@
     margin: auto;
     margin-top: var(--section-padding);
     display: flex;
-    /* flex-wrap: wrap; */
-    flex-direction:column-reverse ;
+    flex-wrap: wrap;
+    /* flex-direction:column-reverse ; */
 }
 .pic{
     margin: 0%;
@@ -174,42 +188,14 @@
 }
 
 
- /* text picture */
-/* .pictext{
-    color: var(--white);
-    text-transform: uppercase;
-} */
- /* .pictext{ */
-    /* margin: auto;
-   
-    text-align: center; */
-    /* color: #ffffff; */
-    /* font-weight: 600; */
-    /* margin: 5%; */
-    /* padding: 1%; */
-    
-/* }   */
-
-
-/* #noktext , #picnorvege, #bretext{
-    margin-left: 28%;
-    margin-top: -6%;
+@media screen and (max-width: 768px) {
+    .btnArt{
+    display: none;    
+    }
+    .textPic{
+        display: none;
+    }
+    .imageMain{
+        flex-direction: column;
+    }
 }
-#tuntext, #dktext{
-    margin-left: 59%;
-    margin-top: -6%;
-}
-#tantext{
-    margin-left: 23%;
-    margin-top: -6%;
-}
-#fintext{
-    margin-left: 44%;
-    margin-top: -6%;
-}
-#ntltext{
-    margin-left: 63%;
-    margin-top: -6%;
-} */
-
-
