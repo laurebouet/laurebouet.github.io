@@ -20,7 +20,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="../JavaScript/menuicon.js"></script>
 </head>
 
 <body>
@@ -30,7 +29,7 @@
             <a href="../index.html"><img src="../images/logo.jpg" alt="logo"></a>
         </div>
         <div class="accueil">
-            <ul class="navlinks">
+            <ul class="navlinks" id="navbar">
                 <li class="menu">
                     <a class="homemenu" href="../index.html">Accueil</a>
                 </li>
@@ -43,12 +42,12 @@
                 <li class="menu">
                     <a class="homemenu" href="../Html/apropos.html">Contact</a>
                 </li>
+                
                 <li class="iconbar">
-                    <a href="" onclick="display()"><i id="menuicon" class="fa-solid fa-bars"></i></a>
+                    <a href="" id="menubar"><i  class="fa-solid fa-bars"></i></a>
                 </li>
-                <li>
-                    <a href="" onclick="hide()"><i class="fa-solid fa-xmark"></i></a>
-
+                <li class="iconbar">
+                    <a href="" id="menucross" ><i class="fa-solid fa-xmark"></i></a>
                 </li>
             </ul>
         </div>
@@ -68,7 +67,7 @@
                 <img class="imgart" src="../assets/destinations/picDestinations/picpolynesia.jpeg" alt="polynesie francaise">
                 <div class="textart">
                     <a href="">
-                        <h3 class="art_title">tahiti <br>Polyn&eacute;sie Fran&ccedil;aise, france</h3>
+                        <h3 class="art_title">&Icirc;le de tahiti,<br>Polyn&eacute;sie Fran&ccedil;aise, france</h3>
                     </a>
                     <h6 class="travel_time">Itin&eacute;raire de 10 à 12 jours</h6>
                 </div>
@@ -106,7 +105,7 @@
                 </div>
             </article>
             <article class="art">
-                <img class="imgart" src="../assets/destinations/picDestinations/" alt="nice">
+                <img class="imgart" src="../assets/destinations/picDestinations/" alt="crete grece">
                 <div class="textart">
                     <h3 class="art_title">&Icirc;le de Cr&ecirc;te,<br>gr&eacute;ce</h3>
                     <h6 class="travel_time">Itin&eacute;raire de 3 &aacute; 4 jours</h6>
@@ -129,10 +128,10 @@
                 </div>
             </article>
             <article class="art">
-                <img class="imgart" src="../assets/destinations/picDestinations/" alt="polynesie francaise">
+                <img class="imgart" src="../assets/destinations/picDestinations/" alt="bora bora polynesie francaise">
                 <div class="textart">
                     <a href="">
-                        <h3 class="art_title">bora bora <br>Polyn&eacute;sie Fran&ccedil;aise, france</h3>
+                        <h3 class="art_title">&Icirc;le de bora bora <br>Polyn&eacute;sie Fran&ccedil;aise, france</h3>
                     </a>
                     <h6 class="travel_time">Itin&eacute;raire de 10 à 12 jours</h6>
                 </div>
@@ -145,7 +144,7 @@
                 </div>
             </article>
             <article class="art">
-                <img class="imgart" src="../assets/destinations/picDestinations/" alt="paris">
+                <img class="imgart" src="../assets/destinations/picDestinations/" alt="paris france">
                 <div class="textart">
                     <a href="#"><h3 class="art_title">Paris, <br>france</h3></a>
                     <h6 class="travel_time">Itin&eacute;raire de 2 à 3 jours</h6>
@@ -188,7 +187,7 @@
                 <img class="imgart" src="../assets/destinations/picDestinations/" alt="polynesie francaise">
                 <div class="textart">
                     <a href="">
-                        <h3 class="art_title">moorea <br>Polyn&eacute;sie Fran&ccedil;aise, france</h3>
+                        <h3 class="art_title">&Icirc;le de moorea <br>Polyn&eacute;sie Fran&ccedil;aise, france</h3>
                     </a>
                     <h6 class="travel_time">Itin&eacute;raire de 10 à 12 jours</h6>
                 </div>
@@ -299,6 +298,8 @@
             </article>
         </div>      
     <script src="../JavaScript/searchbar.js"></script>
+    <script src="../JavaScript/menuicon.js"></script>
+
 
     </main>
 
