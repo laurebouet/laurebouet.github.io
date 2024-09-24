@@ -4,43 +4,17 @@
 
 /* TITLES */
 
-.titlemap{
-    margin-top: var(--section-padding);
-    /*background-color: #a4c2c9;*/
-    /*margin-top: 1%;*/
-    text-align: center;
-    font-family: monospace;
-    text-transform: uppercase;
-}
-
-.d3{
-    
-    /* margin-top: var(--section-padding); */
-}
 
 
-/* SECTION PHOTO ET TEXT */
-/* .d2 .tan{
-    width: 15%;
-    height: 35%;
-    /*margin-top: 15%;*/
-    /* margin-left: 79%;
-    position: relative;
-} */ 
-/* .d2 pre{
-    margin-left: 75%;
-    margin-top: -15%;
-    position: absolute;
-    z-index: 1;
-    color: var(--white);
-    font-weight: 500;
-} */
 
 /* WORLD MAP SVG */
 
 
 .d3{
-    margin-top: var(--section-padding);
+    /* margin-top: var(--section-padding); */
+    /* position: absolute; */
+    height: max-content;
+
 }
 .map{
     padding: var(--section-padding);
@@ -60,36 +34,3 @@
 .mapimg path:hover{
     fill: var(--bg-color);
 }
-
-/* quote */
-.quote p{
-    /* float: left; */
-    font-size: 160%;
-    position: relative;
-    /* margin-top: 3% ; */
-    /* margin-left: 20%; */
-}
-
-/* BUTTON DESTINATIONS */
-/* 
-.d4text h4 a{
-    position: relative;
-    color: var(--white);
-    background-color: var(--bg-color);
-    padding: 1%;
-    float: right;
-    margin-top: 10%;
-    margin-right: 10%;
-    text-transform: uppercase;
-}
-
-.d4text .text{
-    position: relative;
-    float: right;
-    text-align: end;
-    margin-top:4%;
-    margin-right: 10%;
-    width: 15%;
-    font-size: 70%;
-    /*background-color: #a4c2c9;*/
-/*} */

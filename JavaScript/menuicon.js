@@ -1,15 +1,12 @@
-function display(){
-    var menu = document.getElementsByClassName(menu);
-    console.log(menu.length);
-    console.log("oui");
-    // console.log(menu);
-    // document.getElementsByTagName("main").style.display = "none";
-    if(menu.style.display == "none"){
-            // menu.style.display = "inline";
-            console.log("menu is displayed");
-        }
-}
 
-// function hide(){
+var menubar = document.getElementById("menubar")
+var menucross = document.getElementById("menucross")
+console.log(menubar)
+console.log(menucross)
 
-// }
+menubar.addEventListener("click", ()=> {
+    console.log("click")
+    menubar.style.backgroundColor = "red"
+    menucross.style.display = "block"
+});
+

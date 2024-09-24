@@ -70,29 +70,37 @@
 .imageMain {
     width: var(--bg-width);
     height: var(--bg-width);
-    text-align: center;
+    /* width: 150px;
+    height: 200px; */
+    /* text-align: center; */
     margin: auto;
-    margin-top: var(--section-padding);
+    /* margin-top: var(--section-padding);
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     /* flex-direction:column-reverse ; */
-}
+} 
 .pic{
-    margin: 0%;
+    /* margin: auto; */
+    /* margin: 0%;
     border-radius: 7%;
-    opacity: 85%;
+    opacity: 85%; */
+    /* padding:  6px;
+  float:initial; */
+  /* width: 30%; */
     
 }
 .pictext {
     font-weight: bold;
     text-shadow: 2px 2px 2px black;
 } 
-#pictanzanie,#picfinlande, #picnetherlands{
+/* #pictanzanie,#picfinlande, #picnetherlands{
     width: 33%;
     height: 35%;
-}
+} */
 #picnorvege, #pictunisie, #picbresil ,#picdk{
-    width: 49.5%;
+    margin: auto;
+    width: 45%;
+    /* width: 49.5%; */
     height: 30%;
     position: relative;
 }
@@ -188,14 +196,20 @@
 }
 
 
-@media screen and (max-width: 768px) {
-    .btnArt{
-    display: none;    
+@media  screen and (max-width: 768px) {
+
+    .imageText, .pic {
+        width: var(--bg-width);
+        /* height: var(--bg-width); */
+        margin: auto;
+        background-color: yellowgreen;
     }
-    .textPic{
-        display: none;
+    
+    .imageText img{
+        width: 100%;
+        background-color: antiquewhite;
     }
-    .imageMain{
-        flex-direction: column;
-    }
+    .btnArt, .textPic{
+        display: none;    
+        }
 }

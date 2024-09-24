@@ -8,9 +8,6 @@
 article{
     display : inline-block;
     position: absolute;
-}
-
-.art{
     background-color: #fff;
     position: relative;
     width: var(--article-width);
@@ -28,10 +25,10 @@ article{
     transform: scale(1.04);
 }
 
-.textart h3, h6{
+.textart h3{
     color: var(--bg-color);
     padding: 4px;
-    font-size: 100%;
+    font-size: 80%;
     text-align: center;
     text-transform: uppercase;
 }
@@ -51,12 +48,14 @@ article{
     text-decoration: none;
 }
 
-.art_title{
-    font-size: 90%;
-}
 .travel_time{
-    font-size: 80%;
+    font-size: 40%;
     font-weight:400;
+    color: var(--bg-color);
+    padding: 4px;
+    font-size: 60%;
+    text-align: center;
+    text-transform: uppercase;
 }
 .continenttitle h3{
     position: relative;
@@ -69,3 +68,17 @@ article{
 }
  
 
+@media screen and (max-width: 768px){
+  
+    article{
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+        display: inline-block;
+
+    }
+    .imgart{
+        display: none;
+    }
+    
+}
