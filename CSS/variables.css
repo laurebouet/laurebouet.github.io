@@ -11,7 +11,7 @@
     --font : "Inter Tight", sans-serif;
     
     /* width */
-    --bg-width : 60%;
+    --bg-width : 90%;
     --article-width : 21%;
 
     /* padding */
@@ -25,7 +25,7 @@
 
     /* border */
     /* --font-border-title : 50px; */
-    --font-border-text : 10px;
+    --font-border-text : 10%;
 
     /* --right-upper-corner : 
     --left-upper-corner :
@@ -36,7 +36,7 @@
     /* color */
     --white : #ffffff;
     --black : #000000;
-    --bg-color : #decaca;
+    --bg-color : #736969;
     --color : #843434;
 
 }

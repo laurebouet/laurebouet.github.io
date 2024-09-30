@@ -6,57 +6,45 @@
     margin: 0;
     padding: 0;
 }
-.barnav{
-    display: inline-flex;
+.navbar-inverse{
     position: absolute;
     z-index: 1;
     width: 100%;
 }
-.accueil{
-    align-items: center;
-    margin: auto;
-    text-align: center;
-}
-.navlinks{
-    /* font-weight: 40%; */
+.container-fluid{
     list-style: none;
-    display: inline-flex;
     text-transform: uppercase;
 } 
-.menu{
-    margin-left: 10%;
-}
 
-.homemenu{
-    color: #000000;
+.navbar-inline li{
     text-decoration: none;
     /* font-weight: bold; */
     font-weight: bolder;
     padding: var(--title-padding);
 }
-.homemenu:hover{
+.navbar li a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.navbar li:hover{
     background-color: var(--bg-color); ;
     padding: var(--title-padding);
     border-radius: var(--font-border-text);
 }
 
-.iconbar{
-    color: var(--black);
-    display: none;
-} 
-
-.iconbar a i{
-    color: var(--black);
-    text-decoration: none;
-}
 /* LOGO */
 
-.logobar img, #menuicon{
+.navbar-brand img{
     position:relative;
     z-index: 2;
     /* margin-top: -30%; */
     width: 125px;
     height: 125px;
+}
+
+.iconbarnav{
+    display: none;
 }
 
 
@@ -87,7 +75,7 @@
 
 
 @media screen and (max-width: 768px){
-    .barnav{
+    .navbar{
         width: 100%;
         text-decoration: none;
         /* background-color: aquamarine; */
@@ -96,33 +84,18 @@
     /* .accueil .iconbar{
         right: 10%;
     } */
-    .iconbar{
+    .navbar-inline{
         display: inline-flex;
         /* margin-left: 90%; */
         /* background-color: aqua; */
     }
-    .menu{
+    .navbar-inline li{
         display: none;
     }
-    #menucross{
-        display: none;
-    }
-    #menubar{
-        padding: 80%;
-        background-color: aqua;
-    }
-    /* .iconbar{
-        display: inline-flex;
-        color: var(--black);
-    } */
-    /* .iconbar a{
-        color: var(--black);
-    }
 
-    .logobar{
-        width: 100px;
-        height: 100px;
-    } */
-
-    
+    .iconbarnav{
+        display: inline;
+        color: var(--white);
+        font-size: 2rem;
+    }
 }

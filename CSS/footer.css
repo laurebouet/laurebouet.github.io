@@ -11,6 +11,9 @@ body{
 }
 main{
     flex-grow: 1;
+    width: var(--bg-width);
+    margin: auto;
+
 }
 footer{
     position: relative;
@@ -22,7 +25,7 @@ footer{
 }
 .footer li, .footer a{
     /* text-align: start; */
-    color: var(--black);
+    /* color: var(--white); */
     text-decoration: none;
     /* display: block; */
     /*padding: 10%;*/
@@ -62,6 +65,8 @@ fieldset, form{
     padding: 2%;
     margin: 5%;
     background-color: transparent;
+    color: var(--white);
+
 }
 .formtitle[type='submit']{
     text-align: end;

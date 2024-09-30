@@ -2,35 +2,13 @@
 
 /* world map */
 
-/* TITLES */
-
-
-
-
-/* WORLD MAP SVG */
-
-
 .d3{
-    /* margin-top: var(--section-padding); */
-    /* position: absolute; */
-    height: max-content;
-
+    margin-top: var(--section-padding);
 }
 .map{
-    padding: var(--section-padding);
-    width: var(--bg-width);
     margin: auto;
+    /* background-color: antiquewhite; */
 }
-
-/*.mapimg{
-    position: relative;
-    color: var(--bg-color);
-    /* margin-top: -15%; */
-    /* width: var(--bg-width); */
-    /* float: left; */
-    /* margin-left: 7%; */
-
-/* } */
 .mapimg path:hover{
     fill: var(--bg-color);
 }
