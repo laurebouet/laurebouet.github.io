@@ -29,8 +29,8 @@
 
 .navbar li:hover{
     background-color: var(--bg-color); ;
-    padding: var(--title-padding);
-    border-radius: var(--font-border-text);
+    /* padding: var(--title-padding); */
+    border-radius: var(--font-border-title);
 }
 
 /* LOGO */
@@ -43,7 +43,7 @@
     height: 125px;
 }
 
-.iconbarnav{
+.bi-list, .bi-x-lg{
     display: none;
 }
 
@@ -52,7 +52,7 @@
 .searchbar{
     
     background-color: var(--bg-color);
-    border-radius: var(--font-border-text);
+    border-radius: var(--font-border-title);
     width: var(--article-width);
     height: 5%;
     position: relative;
@@ -78,22 +78,16 @@
     .navbar{
         width: 100%;
         text-decoration: none;
-        /* background-color: aquamarine; */
 
     }
-    /* .accueil .iconbar{
-        right: 10%;
-    } */
     .navbar-inline{
         display: inline-flex;
-        /* margin-left: 90%; */
-        /* background-color: aqua; */
     }
     .navbar-inline li{
         display: none;
     }
 
-    .iconbarnav{
+    .bi-list{
         display: inline;
         color: var(--white);
         font-size: 2rem;
