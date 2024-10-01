@@ -61,23 +61,32 @@
 .textPic{
     /* background-color: #d9d3d3; */
     padding: 1%;
-    margin-top: -25%;
+    margin-top: -20%;
+    /* background-color: rgb(126, 121, 115); */
+    width: 100%;
+    align-items: center;
+    text-align: center;
     color: var(--white);
     font-weight: bold;
+    font-size: 80%;
     text-transform: uppercase;
     height: max-content;
 }
+.textPic a{
+    text-decoration: none;
+    color: var(--white);
+}
 
+
+    
 
 /* buttons */
 
-.btnArt{
+/* .btnArt{
     position: absolute;
     color: var(--white);
     font-weight: bold;
     text-transform: uppercase;
-    margin-top: 17%;
-    /* font-size: 100%; */
     padding: var(--title-padding);
 }
 .high{
@@ -87,7 +96,7 @@
     border-radius: var(--font-border-text);
     background-color: var(--bg-color);
     
-}
+} */
 
 
 @media  screen and (max-width: 768px) {

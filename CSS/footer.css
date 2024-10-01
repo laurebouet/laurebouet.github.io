@@ -18,7 +18,7 @@ main{
 footer{
     position: relative;
     background-color: var(--bg-color);
-    margin-top: var(--section-padding);
+    margin-top: calc(var(--section-padding)*2);
     padding: 3%;
     list-style: none;
     display: inline-flex

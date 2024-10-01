@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="../CSS/style.css"/>
     <link rel="stylesheet" type="text/css" href="../CSS/variables.css"/>
@@ -30,6 +37,7 @@
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="../index.html" ><img src="../images/logo.jpg" alt="logo"></a>
+                
             </div>
             <ul class="nav navbar-inline"> 
                 <li><a href="../index.html">Accueil</a></li>
@@ -37,6 +45,8 @@
                 <li><a href="../Html/photos.html">Photos</a></li>
                 <li><a href="../Html/apropos.html">Contact</a></li>
             </ul>
+            <a href=""><i class="bi bi-list"></i></a>
+            <a href=""><i class="bi bi-x-lg"></i></a>
         </div>
     </nav>
 
@@ -47,9 +57,242 @@
             <input id="recherche" type="text" onkeyup="searchbar()" placeholder="votre recherche">
             <p id="res"><br></p>
         </div>
+        <!-- <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>-->
+        
+        <div class="cotainer ">
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/picpolynesia.jpeg" alt="polynesie francaise">
+                    <div class="textart">
+                        <a href="">
+                            <h3 class="art_title">&Icirc;le de Polyn&eacute;sie Fran&ccedil;aise, <br>france</h3>
+                        </a>
+                        <h6 class="travel_time">Itin&eacute;raire de 10 à 12 jours</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/piciceland.jpeg" alt="islande">
+                    <div class="textart">
+                        <a href="">
+                            <h3 class="art_title">Roadtrip <br>en islande </h3>
+                        </a>
+                        <h6 class="travel_time">Itin&eacute;raire de 8 à 10 jours</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/piccph.jpg" alt="copenhague">
+                    <div class="textart">
+                        <a href="../articles/articleCPH.php">
+                            <h3 class="art_title">Copenhague,<br> Danemark</h3>
+                        </a>
+                        <h6 class="travel_time">Itin&eacute;raire de 3 à 4 jours</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/picamsterdam.jpg" alt="">
+                    <div class="textart">
+                         <a href="../articles/articleNTL.php"><h3 class="art_title">Amsterdam,<br>Pays-Bas</h3></a>
+    
+                        <h6 class="travel_time">Itin&eacute;raire de 4 à 5 jours</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/piccph.jpg" alt="chamonix mont blanc">
+                    <div class="textart">
+                        <h3 class="art_title">chamonix<br> mont blanc, france</h3>
+                        <h6 class="travel_time">Itin&eacute;raire de 3 &aacute; 4 jours</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/piccph.jpg" alt="aquitaine">
+                    <div class="textart">
+                        <h3 class="art_title">Royan et les alentours<br>france</h3>
+                        <h6 class="travel_time">Itin&eacute;raire de 3 &aacute; 4 jours</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/piccph.jpg" alt="crete grece">
+                    <div class="textart">
+                        <h3 class="art_title">&Icirc;le de Cr&ecirc;te,<br>gr&eacute;ce</h3>
+                        <h6 class="travel_time">Itin&eacute;raire de 3 &aacute; 4 jours</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/picvenise.jpg" alt="">
+                    <div class="textart">
+                        <h3 class="art_title">Venise et ses îles,<br> Italie</h3>
+                        <h6 class="travel_time">Itin&eacute;raire de 1 semaine</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/picbornholm.jpg" alt="bornholm">
+                    <div class="textart">
+                        <h3 class="art_title">&Icirc;le de Bornholm, <br>Danemark</h3>
+                        <h6 class="travel_time">Itin&eacute;raire de 2 à 3 jours</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/picaarhus.jpg" alt="Aarhus">
+                    <div class="textart">
+                        <h3 class="art_title">Aarhus, <br>Danemark</h3>
+                        <h6 class="travel_time">Itin&eacute;raire de 2 à 3 jours</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/picflo.jpg" alt="">
+                <div class="textart">
+                     <a href="../articles/articleRoadtripIT.php"><h3 class="art_title">Roadtrip en<br> Italie</h3></a>
+
+                    <h6 class="travel_time">Itin&eacute;raire de 1 semaine</h6>
+                </div>
+                </div>
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/picnice.jpg" alt="nice">
+                    <div class="textart">
+                        <h3 class="art_title">Nice, les alentours <br> France</h3>
+                        <h6 class="travel_time">Itin&eacute;raire de 5 jours</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/picfin.jpg" alt="finlande laponie">
+                    <div class="textart">
+                        <a href="#"><h3 class="art_title">Laponie, <br>Finlande</h3></a>
+                        <h6 class="travel_time">Itin&eacute;raire de 1 semaine</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/piccph.jpg" alt="paris france">
+                    <div class="textart">
+                        <a href="#"><h3 class="art_title">Paris, <br>france</h3></a>
+                        <h6 class="travel_time">Itin&eacute;raire de 2 à 3 jours</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/picnok1.jpg" alt="">
+                    <div class="textart">
+                        <a href="../articles/articleNOK.php">
+                            <h3 class="art_title">Bergen et les Fjords, <br>Norv&egrave;ge</h3>
+                        </a>
+                        <h6 class="travel_time">Itin&eacute;raire de 4 à 5 jours</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/piclipari.jpg" alt="">
+                    <div class="textart">
+                        <a href=""><h3 class="art_title">Lipari, Italie <br> les &Icirc;les &Eacute;oliennes </h3></a>
+
+                        <h6 class="travel_time">farniente</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/picport.jpg " alt="portugal">
+                    <div class="textart">
+                        <h3 class="art_title">Roadtrip au<br>Portugal</h3>
+                        <h6 class="travel_time">Itin&eacute;raire de 2 semaines</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/picsicile.jpg" alt="">
+                    <div class="textart">
+                        <a href=""><h3 class="art_title">Sicile, <br >Italie</h3></a>
+    
+                        <h6 class="travel_time">Itin&eacute;raire de 1 semaine</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/picten.jpg" alt="">
+                    <div class="textart">
+                        <h3 class="art_title">&Icirc;le de Tenerife,<br>Espagne</h3>
+                        <h6 class="travel_time">Itin&eacute;raire de 1 semaine</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/picesp.JPG" alt="">
+                    <div class="textart">
+                        <h3 class="art_title">Roadtrip en<br>Espagne</h3>
+                        <h6 class="travel_time">Itin&eacute;raire de 2 semaines</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/piccroatie.JPG" alt="croatie">
+                    <div class="textart">
+                        <h3 class="art_title">Roadtrip en <br>Croatie</h3>
+                        <h6 class="travel_time">Itin&eacute;raire de 1 semaine</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/picmontenegro.JPG" alt="norvege">
+                    <div class="textart">
+                        <h3 class="art_title">Herceg Novi,<br>Mont&eacute;negro</h3>
+                        <h6 class="travel_time">Itin&eacute;raire de 3 à 4 jours</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/picbgl.JPG" alt="bulgarie">
+                    <div class="textart">
+                        <h3 class="art_title">Roadtrip en <br>Bulgarie</h3>
+                        <h6 class="travel_time">Itin&eacute;raire de 2 semaines</h6>
+                    </div>
+                </div>
+                <!-- <div class="col-md-3">
+                    
+                </div> -->
+            </div>
+            <!-- <div class="row">
+                            
+            </div> -->
+
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/pictan.jpg" alt="tanzanie">
+                    <div class="textart">
+                        <a href="../articles/articleTZ.php"><h3 class="art_title">Roadtrip en <br> Tanzanie</h3></a>
+                        <h6 class="travel_time">Itin&eacute;raire de 1 semaine</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/piczanzibar.jpg" alt="tanzanie">
+                    <div class="textart">
+                        <a href=""><h3 class="art_title">&Icirc;le de Zanzibar,<br>Tanzanie</h3></a>
+                        <h6 class="travel_time">Itin&eacute;raire de 1 semaine</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/pictun.jpg" alt="">
+                    <div class="textart">
+                        <h3 class="art_title">&Icirc;le de Djerba et <br>le Sahara, Tunisie</h3>
+                        <h6 class="travel_time">Itin&eacute;raire de 1 semaine</h6>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="imgart" src="../assets/destinations/picDestinations/picbresil.jpg" alt="">
+                    <div class="textart">
+                        <h3 class="art_title">Rio de Janeiro, et <br>Paraty Br&eacute;sil</h3>
+                        <h6 class="travel_time">Itin&eacute;raire de 1 semaine</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-        <div class="continent_eu">
+        <!-- <div class="continent_eu">
             <article class="art">
                 <img class="imgart" src="../assets/destinations/picDestinations/picpolynesia.jpeg" alt="polynesie francaise">
                 <div class="textart">
@@ -78,21 +321,21 @@
                 </div>
             </article>
             <article class="art">
-                <img class="imgart" src="../assets/destinations/picDestinations/" alt="chamonix mont blanc">
+                <img class="imgart" src="../assets/destinations/picDestinations/piccph.jpg" alt="chamonix mont blanc">
                 <div class="textart">
                     <h3 class="art_title">chamonix<br> mont blanc, france</h3>
                     <h6 class="travel_time">Itin&eacute;raire de 3 &aacute; 4 jours</h6>
                 </div>
             </article>
             <article class="art">
-                <img class="imgart" src="../assets/destinations/picDestinations/" alt="aquitaine">
+                <img class="imgart" src="../assets/destinations/picDestinations/piccph.jpg" alt="aquitaine">
                 <div class="textart">
                     <h3 class="art_title">Royan et les alentours<br>france</h3>
                     <h6 class="travel_time">Itin&eacute;raire de 3 &aacute; 4 jours</h6>
                 </div>
             </article>
             <article class="art">
-                <img class="imgart" src="../assets/destinations/picDestinations/" alt="crete grece">
+                <img class="imgart" src="../assets/destinations/picDestinations/piccph.jpg" alt="crete grece">
                 <div class="textart">
                     <h3 class="art_title">&Icirc;le de Cr&ecirc;te,<br>gr&eacute;ce</h3>
                     <h6 class="travel_time">Itin&eacute;raire de 3 &aacute; 4 jours</h6>
@@ -101,7 +344,6 @@
             <article class="art">
                 <img class="imgart" src="../assets/destinations/picDestinations/picbornholm.jpg" alt="bornholm">
                 <div class="textart">
-                    <!-- <a href=""></a> -->
                     <h3 class="art_title">&Icirc;le de Bornholm, <br>Danemark</h3>
                     <h6 class="travel_time">Itin&eacute;raire de 2 à 3 jours</h6>
                 </div>
@@ -109,13 +351,12 @@
             <article class="art">
                 <img class="imgart" src="../assets/destinations/picDestinations/picaarhus.jpg" alt="Aarhus">
                 <div class="textart">
-                    <!-- <a href=""></a> -->
                     <h3 class="art_title">Aarhus, <br>Danemark</h3>
                     <h6 class="travel_time">Itin&eacute;raire de 2 à 3 jours</h6>
                 </div>
             </article>
             <article class="art">
-                <img class="imgart" src="../assets/destinations/picDestinations/" alt="bora bora polynesie francaise">
+                <img class="imgart" src="../assets/destinations/picDestinations/piccph.jpg" alt="bora bora polynesie francaise">
                 <div class="textart">
                     <a href="">
                         <h3 class="art_title">&Icirc;le de bora bora <br>Polyn&eacute;sie Fran&ccedil;aise, france</h3>
@@ -131,7 +372,7 @@
                 </div>
             </article>
             <article class="art">
-                <img class="imgart" src="../assets/destinations/picDestinations/" alt="paris france">
+                <img class="imgart" src="../assets/destinations/picDestinations/piccph.jpg" alt="paris france">
                 <div class="textart">
                     <a href="#"><h3 class="art_title">Paris, <br>france</h3></a>
                     <h6 class="travel_time">Itin&eacute;raire de 2 à 3 jours</h6>
@@ -157,7 +398,6 @@
             <article class="art">
                 <img class="imgart" src="../assets/destinations/picDestinations/picvenise.jpg" alt="">
                 <div class="textart">
-                    <!-- <a href="./articleNOK.php"><h3 class=art_title"></h3></a> -->
                     <h3 class="art_title">Venise et ses îles,<br> Italie</h3>
                     <h6 class="travel_time">Itin&eacute;raire de 1 semaine</h6>
                 </div>
@@ -171,7 +411,7 @@
                 </div>
             </article>
             <article class="art">
-                <img class="imgart" src="../assets/destinations/picDestinations/" alt="polynesie francaise">
+                <img class="imgart" src="../assets/destinations/picDestinations/piccph.jpg" alt="polynesie francaise">
                 <div class="textart">
                     <a href="">
                         <h3 class="art_title">&Icirc;le de moorea <br>Polyn&eacute;sie Fran&ccedil;aise, france</h3>
@@ -198,7 +438,6 @@
             <article class="art">
                 <img class="imgart" src="../assets/destinations/picDestinations/picten.jpg" alt="">
                 <div class="textart">
-                    <!-- <a href="./articleNOK.php"><h3 class=art_title"></h3></a> -->
                     <h3 class="art_title">&Icirc;le de Tenerife,<br>Espagne</h3>
                     <h6 class="travel_time">Itin&eacute;raire de 1 semaine</h6>
                 </div>
@@ -206,7 +445,6 @@
             <article class="art">
                 <img class="imgart" src="../assets/destinations/picDestinations/picesp.JPG" alt="">
                 <div class="textart">
-                    <!-- <a href="./articleNOK.php"><h3 class=art_title"></h3></a> -->
                     <h3 class="art_title">Roadtrip en<br>Espagne</h3>
                     <h6 class="travel_time">Itin&eacute;raire de 2 semaines</h6>
                 </div>
@@ -214,7 +452,6 @@
             <article class="art">
                 <img class="imgart" src="../assets/destinations/picDestinations/piccroatie.JPG" alt="croatie">
                 <div class="textart">
-                    <!-- <a href="./articleNOK.php"><h3 class=art_title"></h3></a> -->
                     <h3 class="art_title">Roadtrip en <br>Croatie</h3>
                     <h6 class="travel_time">Itin&eacute;raire de 1 semaine</h6>
                 </div>
@@ -222,7 +459,6 @@
             <article class="art">
                 <img class="imgart" src="../assets/destinations/picDestinations/picmontenegro.JPG" alt="norvege">
                 <div class="textart">
-                    <!-- <a href="./articleNOK.php"><h3 class=art_title"></h3></a> -->
                     <h3 class="art_title">Herceg Novi,<br>Mont&eacute;negro</h3>
                     <h6 class="travel_time">Itin&eacute;raire de 3 à 4 jours</h6>
                 </div>
@@ -230,7 +466,6 @@
             <article class="art">
                 <img class="imgart" src="../assets/destinations/picDestinations/picbgl.JPG" alt="bulgarie">
                 <div class="textart">
-                    <!-- <a href="./articleNOK.php"><h3 class=art_title"></h3></a> -->
                     <h3 class="art_title">Roadtrip en <br>Bulgarie</h3>
                     <h6 class="travel_time">Itin&eacute;raire de 2 semaines</h6>
                 </div>
@@ -268,7 +503,6 @@
             <article class="art">
                 <img class="imgart" src="../assets/destinations/picDestinations/pictun.jpg" alt="">
                 <div class="textart">
-                    <!-- <a href="./articleNOK.php"><h3 class=art_title"></h3></a> -->
                     <h3 class="art_title">&Icirc;le de Djerba et <br>le Sahara, Tunisie</h3>
                     <h6 class="travel_time">Itin&eacute;raire de 1 semaine</h6>
                 </div>
@@ -278,12 +512,11 @@
             <article class="art">
                 <img class="imgart" src="../assets/destinations/picDestinations/picbresil.jpg" alt="">
                 <div class="textart">
-                    <!-- <a href="./articleNOK.php"><h3 class=art_title"></h3></a> -->
                     <h3 class="art_title">Rio de Janeiro, et <br>Paraty Br&eacute;sil</h3>
                     <h6 class="travel_time">Itin&eacute;raire de 1 semaine</h6>
                 </div>
             </article>
-        </div>      
+        </div>       -->
     <script src="../JavaScript/searchbar.js"></script>
     <script src="../JavaScript/menuicon.js"></script>
 

@@ -1,5 +1,8 @@
+@import "variables.css";
 
-/* UNIQUEMENT POUR CETTE PAGE */
+body{
+    background-color: rgb(211, 224, 236);
+ }
 
 main{
     width: var(--bg-width);
@@ -25,14 +28,21 @@ main{
     margin-top: calc(var(--section-padding)*2);
     text-align: center;
     text-transform: uppercase;
+
 }
-/* 
-.photo{
-    
-    background-color: rgb(59, 154, 237);} */
 
-
-.photo img{
+.col-lg-6 {
+    margin-top: var(--section-padding);
+    text-align: center;
+}
+.col-lg-6 p{
+    text-align: left ;
+    border: 1px solid var(--bg-color);
+    border-radius: var(--font-border-title);
+    padding: 4%;
+}
+#photo img{
+    width: 33%;
     border-radius: var(--font-border-text);
-    width: calc(var(--article-width));
+    /* width: calc(var(--article-width)); */
 }

@@ -3,7 +3,7 @@
 /* world map */
 
 .d3{
-    margin-top: var(--section-padding);
+    margin-top: calc(var(--section-padding)*2);
 }
 .map{
     margin: auto;
@@ -12,3 +12,39 @@
 .mapimg path:hover{
     fill: var(--bg-color);
 }
+
+
+
+/* .planetrack{
+    margin-top: var(--section-padding);
+    width:100%;
+    border:1px solid #CCC;
+    position:relative;
+    top:0; bottom:0; left:0;right:0;
+    margin:auto;
+    border-radius:50%; 
+} 
+.bi-airplane-engines{
+    color: red;
+    width: 8%;
+    animation: plane 7s linear infinite;
+    margin-top: var(--section-padding);
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;    
+    transform: rotate(90deg);
+
+} 
+@keyframes plane {
+    
+    0%{
+        transform:rotate(0deg)
+                  translate(-165px)
+                  rotate(0deg);
+      
+      }
+      100%{
+        transform:rotate(180deg)
+                  translate(-165px)
+                  rotate(-180deg);
+      }
+} */
