@@ -22,11 +22,14 @@ body{
     border-radius:10px 10px 10px 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 } */
-.col-md-3:hover{
+.col-md:hover{
     transform: scale(1.01);
 }
 
-.row{
+/* .row{
+    margin-top: 3%;
+} */
+.col-md{
     margin-top: 7%;
 }
 .textart h3{
