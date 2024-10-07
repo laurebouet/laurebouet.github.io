@@ -35,7 +35,7 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-md bg-light fixed-top">
+    <nav class="navbar navbar-expand-md p-0 fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html" ><img src="../images/logo.jpg" alt="logo"></a>
 
@@ -75,57 +75,94 @@
 
     <main>
     <h2 class="title"> Article &Agrave; la une</h2>
-    
-    <div class="d1">
 
-        
-        <div class="row m-2 ">
-            <div class ="col m-auto">
+
+        <div class="spacer"></div>
+
+    <div class="d-flex flex-wrap text-center picture">
+        <div class="p-1 justify-content-center" style="width:400px">
+            <img class="rounded"  id="picnorvege" src="../images/norvege.jpg" alt="norvège">
+            <p class="textPic" id="textnorvege"><a href="">Voyage en Norvège</a></p>
+        </div>
+        <div class="p-1" style="width:400px">
+            <img class="rounded"  id="pictunisie" src="../images/tunsahara.jpg" alt="tunisie">
+                <p class="textPic" id="texttunisie"><a href="">Voyage en Tunisie</a></p>
+        </div>
+    </div>
+
+    <div class="d-flex flex-wrap text-center picture">
+        <div class="p-1 justify-content-center" style="width:270px">
+            <img class="rounded" id="pictanzanie" src="../images/firetann.jpg" alt="tanzanie">
+                <p class="textPic" id="texttanzanie"><a href="">Voyage en Tanzanie</a></p>
+        </div>
+        <div class="p-1" style="width:270px">
+            <img class="rounded" id="picfinlande" src="../images/finlande.jpg" alt="finlande">
+            <p class="textPic" id="textfinlande"><a href="">Voyage en Finlande</a></p>
+        </div>
+        <div class="p-1" style="width:270px">
+            <img class="rounded" id="picnetherlans" src="../images/netherlands.jpg" alt="pays-bas">
+            <p class="textPic" id="textnetherlands"><a href="">Voyage au Pays-Bas</a></p>
+        </div>
+    </div>
+    
+    <div class="d-flex flex-wrap text-center picture">
+        <div class="p-1 justify-content-center" style="width:400px">
+            <img class="rounded" id="picbresil" src="./images/bresil.jpg" alt="bresil">
+            <p class="textPic" id="textbresil"><a href="">Voyage au Br&eacute;sil</a></p>
+        </div>
+        <div class="p-1" style="width:400px">
+            <img class="rounded" id="picdk" src="../images/dkpic.jpg" alt="copenhague">
+            <p class="textPic" id="textdk"><a href="">Voyage au Danemark</a></p>
+        </div>
+    </div>
+
+
+
+
+
+    
+    <!-- <div class="container text-center" id="article-part"> -->
+
+        <!-- <div class="row">
+            <div class ="col col-lg">
                 <img class="rounded"  id="picnorvege" src="../images/norvege.jpg" alt="norvège">
                 <p class="textPic" id="textnorvege"><a href="">Voyage en Norvège</a></p>
-                <!-- <div class="btnArt" id="btnnorvege">d&eacute;couvrir</div> -->
             </div>
-            <div class ="col m-auto">
+            <div class ="col col-lg">
                     
                 <img class="rounded"  id="pictunisie" src="../images/tunsahara.jpg" alt="tunisie">
                 <p class="textPic" id="texttunisie"><a href="">Voyage en Tunisie</a></p>
-                <!-- <div class="btnArt" id="btntunisie">d&eacute;couvrir</div> -->
             </div>
-        </div>
+        </div> -->
 
-        <div class="row m-2 ">
-            <div class ="col m-auto">
+        <!-- <div class="row ">
+            <div class ="col col-lg">
                 <img class="rounded" id="pictanzanie" src="../images/firetann.jpg" alt="tanzanie">
                 <p class="textPic" id="texttanzanie"><a href="">Voyage en Tanzanie</a></p>
-                <!-- <div class="btnArt high" id="btntanzanie">d&eacute;couvrir</div> -->
             </div>
-            <div class ="col m-auto">
+            <div class ="col col-lg">
                 <img class="rounded" id="picfinlande" src="../images/finlande.jpg" alt="finlande">
                 <p class="textPic" id="textfinlande"><a href="">Voyage en Finlande</a></p>
-                <!-- <div class="btnArt high" id="btnfinlande">d&eacute;couvrir</div> -->
             </div>
-            <div class ="col m-auto">
+            <div class ="col col-lg">
                 <img class="rounded" id="picnetherlans" src="../images/netherlands.jpg" alt="pays-bas">
                 <p class="textPic" id="textnetherlands"><a href="">Voyage au Pays-Bas</a></p>
-                <!-- <div class="btnArt high" id="btnnetherlands">d&eacute;couvrir</div> -->
             </div>
-        </div>
+        </div> -->
 
-        <div class="row m-2 ">
-            <div class ="col m-auto">
+        <!-- <div class="row ">
+            <div class ="col col-lg">
                 <img class="rounded" id="picbresil" src="./images/bresil.jpg" alt="bresil">
                 <p class="textPic" id="textbresil"><a href="">Voyage au Br&eacute;sil</a></p>
-                <!-- <div class="btnArt" id="btnbresil">d&eacute;couvrir</div> -->
             </div>
-            <div class ="col m-auto">
+            <div class ="col col-lg">
                     
                 <img class="rounded" id="picdk" src="../images/dkpic.jpg" alt="copenhague">
                 <p class="textPic" id="textdk"><a href="">Voyage au Danemark</a></p>
-                <!-- <div class="btnArt" id="btndk">d&eacute;couvrir</div> -->
             </div>
-        </div>
+        </div> -->
         
-    </div>
+    <!-- </div> -->
 
 
     <h2 class="title">carte du monde</h2>
@@ -324,14 +361,13 @@
             </div>
         </div>
         <script src="../JavaScript/worldmap.js"></script>
-        
         <script src="../JavaScript/counter.js"></script>
     </div>
     
     </main>
     <footer>
        
-        <fieldset>
+        <!-- <fieldset>
             <h2 class="formtitle">Message</h2>
             <form action="message.php" method="post">
                 <input class="form_input" type="text" name="nom" placeholder="Nom"><br>
@@ -360,8 +396,46 @@
                         <a class="logo" href=""><i  class="fa-solid fa-envelope"></i>
                     </a>
                 </li>
-        </ul>
+        </ul> -->
         
+
+       <div class="d-flex flex-wrap justify-content-start" id="formulaire">
+            <div class="flex-column" style="width: 400px;">
+                <div class="">
+                    <label for="exampleFormControlInput1">Adresse email</label>
+                    <input type="email" class="form-control" id="exampleFormCotrolInput1" placeholder="nom@example.com" required>
+                </div>
+                <div class="">
+                    <label for="exampleFormControlTextarea1" class="form-label" required>
+                        Votre demande :
+                    </label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                </div>
+                
+                <div class="">
+                    <label for="formFileLg" class="form-label">
+                        Choissisez un fichier :
+                    </label>
+                    <input class="form-control form-control-lg" id="formFileLg" type="file">
+                </div>
+                <div class="">
+                    <button type="submit" class="btn  btn ">Envoyer</button>
+                </div>
+            </div>
+       </div>
+
+       <div class="d-flex flex-wrap align-items-end" id="icons">
+            <div class="flex-colunm" style="width: 400px;">
+
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-github"></i>
+            
+            </div>
+       </div>
+
+
+
+
     </footer>
 
 </body>

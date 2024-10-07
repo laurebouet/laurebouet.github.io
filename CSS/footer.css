@@ -19,88 +19,19 @@ footer{
     position: relative;
     background-color: var(--bg-color);
     margin-top: calc(var(--section-padding)*2);
-    padding: 3%;
-    list-style: none;
-    display: inline-flex
-}
-.footer li, .footer a{
-    /* text-align: start; */
-    /* color: var(--white); */
-    text-decoration: none;
-    /* display: block; */
-    /*padding: 10%;*/
-}
-footer fieldset, footer ul{
-    margin: auto;
-    margin-top: 5%;
-}
-.icons .logo {
-    /* margin: 20%; */
-    /* margin-top: 6%; */
-    width:max-content;
-    padding: var(--title-padding);
-    text-decoration: none;
+    padding: 5%;
     list-style: none;
     display: inline-flex;
 }
-.logo i{
-    padding: var(--title-padding);
+#formulaire{
+    background-color: yellow;
+    
+}
+
+#icons{
+    background-color: aqua;
+    color: var(--white);
     font-size: 150%;
-    color: var(--color);
+    /* width: max-content; */
 }
 
-
-/* formulaire */
-fieldset .formtitle{
-    text-transform: uppercase;
-    color: var(--color);
-    font-size: 900;
-}
-fieldset, form{
-    border: none;
-    width: 40%;
-}
-.form_input, textarea{
-    border: transparent;
-    padding: 2%;
-    margin: 5%;
-    background-color: transparent;
-    color: var(--white);
-
-}
-.formtitle[type='submit']{
-    text-align: end;
-}
-.form_input, .button_send{
-    outline: none;
-    border: none;
-}
-.button_send{
-    background-color: var(--color);
-    text-transform: uppercase;
-    padding: var(--title-padding);
-    border-radius: var(--font-border-title);
-    color: var(--white);
-}
-
-
-
-
-
-/*.form_input input[placeholder]{*/
-/*    text-decoration: underline brown;*/
-/*}*/
-
-.barFooter{
-    
-    display: block;
-    padding: 10%;
-    position: relative;
-    z-index: 1;
-    /* margin-left: 10%; */
-}
-.barFooter a{
-    
-    text-decoration: none;
-    color: var(--black);
-}
