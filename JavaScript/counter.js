@@ -10,7 +10,7 @@ visited =
 var text = document.getElementById("counttext");
 var count = 0;
 console.log(visited)
-    let counts = setInterval(updateCount, 70);
+    let counts = setInterval(updateCount, 20);
 
     function updateCount(){
         count++;

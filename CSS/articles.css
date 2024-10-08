@@ -1,0 +1,24 @@
+@import 'variables.css';
+
+h1{
+    margin-top: calc(var(--section-padding) * 4);
+    text-transform: uppercase;
+    position: relative;
+}
+h3{
+    margin-top: var(--section-padding);
+}
+.map{
+    width: 450px;
+    padding: 2%;
+}
+
+path{
+    fill: var(--bg-color);
+
+}
+
+.countryintro{
+    background-color: yellow;
+    padding: 2%;
+}

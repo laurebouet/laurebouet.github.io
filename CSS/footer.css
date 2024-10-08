@@ -13,8 +13,6 @@ main{
     flex-grow: 1;
     width: var(--bg-width);
     margin: auto;
-    background-color: rgb(105, 110, 115);
-
 }
 footer{
     position: relative;
