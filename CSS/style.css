@@ -7,14 +7,16 @@
     padding: 0;
 }
 
-
+body{
+    background-color: rgb(202, 204, 206);
+}
 .menu{
     text-decoration: none;
     color: var(--black);
-}
 
+}
 .navbar-nav li{
-    margin-right: 4%;
+    margin: 4%;
 }
 
 
@@ -31,24 +33,24 @@
 /* SEARCH BAR */
 .searchbar{
     
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color); */
     border-radius: var(--font-border-title);
     width: var(--article-width);
-    height: 5%;
+    /* height: 5%; */
     position: relative;
-    margin-top: calc(var(--section-padding)*2);
+    margin-top: calc(var(--section-padding)*4);
     margin-left: var(--left-margin);
 }
 #recherche{
-    margin-top: 5%;
+    /* margin-top: 2%; */
 
-    width: calc(var(--article-width)*4);
-    background-color: var(--bg-color);
+    /* width: calc(var(--article-width)*4); */
     border: none;
     outline: none;
+    background-color: transparent;
 }
 #res{
-    color: var(--black);
+    color: red;
     font-size: 12px;
     margin-left: 10%;
 }

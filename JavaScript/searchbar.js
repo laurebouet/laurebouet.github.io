@@ -1,38 +1,28 @@
 //bar de recherche
 
 function searchbar(){
-    var input, filter, article, title, i, nb_art, cpt, box;
-    cpt=0;
+    var input, filter, altText, img, i, articles, count;
+    count=0;
     input =  document.getElementById("recherche");
-    
     filter = input.value.toUpperCase();
+    articles = document.getElementsByClassName("article");
 
-    nb_art = document.getElementsByTagName("article");
-    
+    // console.log(articles.length);
 
-    for(i=0;i<nb_art.length+1;i++){
+    for(i=0;i<articles.length+1;i++){
 
-        text_art = document.getElementById("textart");
-        title = document.getElementsByClassName("art_title");
-        box = document.getElementsByClassName("art");
+        img= document.getElementsByClassName("imgart")[i] ;
+        altText = img.alt;
 
-        console.log(i)
-
-        txtvalue = box[i].textContent || title[i].innerText;
-
-        if(txtvalue.toUpperCase().indexOf(filter) > -1){
-            console.log("oui "+ txtvalue);
-            
-            box[i].style.display = "";
-            
-            cpt=cpt+1;
+        console.log(img);
+        console.log(altText);
+        if(altText.toUpperCase().indexOf(filter) > -1){
+            articles[i].style.display = "";
+            count=count+1;
         }
         else{
-            console.log("non "+ txtvalue);
-            
-            box[i].style.display = "none";
+            articles[i].style.display = "none";
         }
-        console.log(cpt);
     }
-    document.getElementById("res").innerHTML =cpt+" résulat(s) trouvé(s)";
+    document.getElementById("res").innerHTML =count+" résulat(s) trouvé(s)";
 }

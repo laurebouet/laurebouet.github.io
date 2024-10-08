@@ -17,7 +17,7 @@ main{
 footer{
     position: relative;
     background-color: var(--bg-color);
-    margin-top: calc(var(--section-padding)*2);
+    margin-top: calc(var(--section-padding)*1);
     padding: 1%;
 }
 
