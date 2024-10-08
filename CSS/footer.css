@@ -13,13 +13,14 @@ main{
     flex-grow: 1;
     width: var(--bg-width);
     margin: auto;
+    background-color: rgb(105, 110, 115);
 
 }
 footer{
     position: relative;
     background-color: var(--bg-color);
     margin-top: calc(var(--section-padding)*2);
-    padding: 3%;
+    padding: 1%;
 }
 
 #formulaire, .btn{
@@ -43,5 +44,5 @@ footer{
     border: transparent;
 }
 .col-auto{
-    margin: 2%;
+    margin: 4%;
 }

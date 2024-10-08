@@ -39,17 +39,10 @@
     margin-top: var(--section-padding);
     text-align: center;
     text-transform: uppercase;
-    /* background-color: aquamarine; */
 }
 
-
-
-.spacer{
-    padding: var(--section-padding);
-}
 .picture{
-    width: var(--bg-width);
-    /* margin: auto; */
+    margin-top: var(--section-padding);
 }
 
 .rounded{
@@ -73,37 +66,3 @@
     text-decoration: none;
     color: var(--white);
 }
-
-
-    
-
-/* buttons */
-
-/* .btnArt{
-    position: absolute;
-    color: var(--white);
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: var(--title-padding);
-}
-.high{
-    margin-top: 20%;
-}
-.btnArt:hover{
-    border-radius: var(--font-border-text);
-    background-color: var(--bg-color);
-    
-} */
-
-
-/* @media  screen and (max-width: 768px) {
-
-    .col{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    /* .btnArt, .textPic{
-        display: none;    
-        } */
-/* } */ 
