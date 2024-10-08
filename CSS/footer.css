@@ -20,18 +20,30 @@ footer{
     background-color: var(--bg-color);
     margin-top: calc(var(--section-padding)*2);
     padding: 5%;
-    list-style: none;
-    display: inline-flex;
 }
-#formulaire{
-    background-color: yellow;
-    
+
+#formulaire, .btn{
+    color: var(--white);
+    /* background-color: yellow; */
+    border: 1px solid var(--white);
+    border-radius: var(--font-border-title);
 }
 
 #icons{
-    background-color: aqua;
-    color: var(--white);
+    /* background-color: aqua; */
     font-size: 150%;
-    /* width: max-content; */
 }
 
+#barnavfooter{
+    /* background-color: aquamarine; */
+}
+
+
+.list-group-item a{
+    text-decoration: none;
+    color: var(--white);
+}
+.list-group-item{
+    background-color: transparent;
+    border: transparent;
+}
