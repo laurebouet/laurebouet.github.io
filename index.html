@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="description" 
+    content="carte du monde et proposition des articles à la une.">
 
+    <title>Travel</title>
+        
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -21,8 +24,6 @@
     <link rel="stylesheet" type="text/css" href="../css/worldmap.css"/>
     <link rel="stylesheet" type="text/css" href="../css/footer.css"/>
     
-    <title>Travel</title>
-    
     <!-- favicon -->
     <link rel="icon" href="../assets/pics/favicon.ico" />
     <!-- icons -->
@@ -35,11 +36,15 @@
 
 </head>
 <body>
+<<<<<<< Updated upstream
     <nav class="navbar navbar-expand-lg p-0 fixed-top">
+=======
+    <nav class="navbar navbar-expand-md  fixed-top">
+>>>>>>> Stashed changes
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html" ><img src="../images/logo.jpg" alt="logo"></a>
+            <a class="navbar-brand" href="../index.html" aria-label="logo du siteweb"><img src="../images/logo.jpg" alt="logo"></a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="bouton pour afficher le menu de coté">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -57,10 +62,10 @@
                 <!-- <div class="dropdown-menu"> -->
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 ">
-                                <li><a class="menu" href="../index.html">Accueil</a></li>
-                                <li><a class="menu" href="../Html/destinations.html">Destinations</a></li>
-                                <li><a class="menu" href="../Html/photos.html">Photos</a></li>
-                                <li><a class="menu" href="../Html/apropos.html">Contact</a></li>
+                                <li><a class="menu" aria-label="bar de navigation, bouton accueil" href="../index.html">Accueil</a></li>
+                                <li><a class="menu" aria-label="bar de navigation, bouton choix de destinations" href="../Html/destinations.html">Destinations</a></li>
+                                <li><a class="menu" aria-label="bar de navigation, bouton bibilothéque de photos" href="../Html/photos.html">Photos</a></li>
+                                <li><a class="menu" aria-label="bar de navigation, bouton en savoir plus sur moi" href="../Html/apropos.html">Contact</a></li>
                         </ul>
                     </div>
                 <!-- </div> -->
@@ -75,6 +80,7 @@
 
     <main>
     <h2 class="title"> Article &Agrave; la une</h2>
+<<<<<<< Updated upstream
 
 
         <div class="spacer"></div>
@@ -132,9 +138,33 @@
                     
                 <img class="rounded"  id="pictunisie" src="../images/tunsahara.jpg" alt="tunisie">
                 <p class="textPic" id="texttunisie"><a href="">Voyage en Tunisie</a></p>
+=======
+    
+    <div class="container text-center">
+
+        
+        <div class="row flex-row ">
+            <div class ="col">
+                <img class="rounded"  id="picnorvege" src="../images/norvege.jpg" alt="norvège">
+                <p class="textPic" id="textnorvege"><a href="" aria-label="Article voyage en Norvège">Voyage en Norvège</a></p>
+                <!-- <div class="btnArt" id="btnnorvege">d&eacute;couvrir</div> -->
+            </div>
+            <div class ="col">
+                    
+                <img class="rounded"  id="pictunisie" src="../images/tunsahara.jpg" alt="tunisie">
+                <p class="textPic" id="texttunisie"><a href="" aria-label="Article voyage en Finlande">Voyage en Tunisie</a></p>
+                <!-- <div class="btnArt" id="btntunisie">d&eacute;couvrir</div> -->
+            </div>
+            <div class ="col">
+                    
+                <img class="rounded"  id="pictunisie" src="../images/tunsahara.jpg" alt="tunisie">
+                <p class="textPic" id="texttunisie"><a href="" aria-label="Article voyage en Tunisie">Voyage en Tunisie</a></p>
+                <!-- <div class="btnArt" id="btntunisie">d&eacute;couvrir</div> -->
+>>>>>>> Stashed changes
             </div>
         </div> -->
 
+<<<<<<< Updated upstream
         <!-- <div class="row ">
             <div class ="col col-lg">
                 <img class="rounded" id="pictanzanie" src="../images/firetann.jpg" alt="tanzanie">
@@ -147,9 +177,27 @@
             <div class ="col col-lg">
                 <img class="rounded" id="picnetherlans" src="../images/netherlands.jpg" alt="pays-bas">
                 <p class="textPic" id="textnetherlands"><a href="">Voyage au Pays-Bas</a></p>
+=======
+        <div class="row flex-row ">
+            <div class ="col">
+                <img class="rounded" id="pictanzanie" src="../images/firetann.jpg" alt="tanzanie">
+                <p class="textPic" id="texttanzanie"><a href="" aria-label="Article voyage en Tanzanie">Voyage en Tanzanie</a></p>
+                <!-- <div class="btnArt high" id="btntanzanie">d&eacute;couvrir</div> -->
+            </div>
+            <div class ="col">
+                <img class="rounded" id="picfinlande" src="../images/finlande.jpg" alt="finlande">
+                <p class="textPic" id="textfinlande"><a href="" aria-label="Article voyage en Finlande">Voyage en Finlande</a></p>
+                <!-- <div class="btnArt high" id="btnfinlande">d&eacute;couvrir</div> -->
+            </div>
+            <div class ="col">
+                <img class="rounded" id="picnetherlans" src="../images/netherlands.jpg" alt="pays-bas">
+                <p class="textPic" id="textnetherlands"><a href="" aria-label="Article voyage au Pays-Bas">Voyage au Pays-Bas</a></p>
+                <!-- <div class="btnArt high" id="btnnetherlands">d&eacute;couvrir</div> -->
+>>>>>>> Stashed changes
             </div>
         </div> -->
 
+<<<<<<< Updated upstream
         <!-- <div class="row ">
             <div class ="col col-lg">
                 <img class="rounded" id="picbresil" src="./images/bresil.jpg" alt="bresil">
@@ -159,6 +207,19 @@
                     
                 <img class="rounded" id="picdk" src="../images/dkpic.jpg" alt="copenhague">
                 <p class="textPic" id="textdk"><a href="">Voyage au Danemark</a></p>
+=======
+        <div class="row flex-row ">
+            <div class ="col">
+                <img class="rounded" id="picbresil" src="./images/bresil.jpg" alt="bresil">
+                <p class="textPic" id="textbresil"><a href="" aria-label="Article voyage au Brésil">Voyage au Br&eacute;sil</a></p>
+                <!-- <div class="btnArt" id="btnbresil">d&eacute;couvrir</div> -->
+            </div>
+            <div class ="col">
+                    
+                <img class="rounded" id="picdk" src="../images/dkpic.jpg" alt="copenhague">
+                <p class="textPic" id="textdk"><a href="" aria-label="Article voyage au Danemark">Voyage au Danemark</a></p>
+                <!-- <div class="btnArt" id="btndk">d&eacute;couvrir</div> -->
+>>>>>>> Stashed changes
             </div>
         </div> -->
         
@@ -383,17 +444,17 @@
         </fieldset>
         
         <ul>
-            <li class="barFooter"><a href="../index.html">Accueil</a></li>
-            <li class="barFooter"><a href="../Html/destinations.html">Destinations</a></li>
-            <li class="barFooter"><a href="../Html/photos.html">Photos</a></li>
-            <li class="barFooter"><a href="../Html/apropos.html">Contact</a></li>
+            <li class="barFooter"><a aria-label="bouton de navigation dans le footer pour aller sur l'accueil" href="../index.html">Accueil</a></li>
+            <li class="barFooter"><a aria-label="bouton de navigation dans le footer pour aller sur les articles des destinations proposés" href="../Html/destinations.html">Destinations</a></li>
+            <li class="barFooter"><a aria-label="bouton de navigation dans le footer pour aller sur la bibilothéque de photo de mes voyages" href="../Html/photos.html">Photos</a></li>
+            <li class="barFooter"><a aria-label="bouton de navigation dans le footer pour aller sur la page pour en savoir plus sur moi" href="../Html/apropos.html">Contact</a></li>
        
             <li class="barFooter">Mentions légales</li>
             <li class="icons">
                 
-                    <a class="logo" href="https://www.linkedin.com/in/laure-bouet-2a399b239?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bzix0oYBzTjCSOw69q1vIwQ%3D%3D">
+                    <a class="logo" aria-label="accèder à mon linkedIn" href="https://www.linkedin.com/in/laure-bouet-2a399b239?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bzix0oYBzTjCSOw69q1vIwQ%3D%3D">
                         <i  class="fa-brands fa-linkedin"></i></a>
-                        <a class="logo" href=""><i  class="fa-solid fa-envelope"></i>
+                        <a aria-label="pour me contacter par mail" class="logo" href=""><i  class="fa-solid fa-envelope"></i>
                     </a>
                 </li>
         </ul> -->
