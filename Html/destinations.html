@@ -564,39 +564,47 @@
     </main>
 
     <footer>
-       
-        <fieldset>
-            <h2 class="formtitle">Message</h2>
-            <form action="message.php" method="post">
-                <input class="form_input" type="text" name="nom" placeholder="Nom"><br>
-    
-                <input class="form_input" type="text" name="prénom" placeholder="Prénom"><br>
-    
-                <input class="form_input" type="email" name="email" placeholder="Email"><br>
-    
-                <textarea name="message" placeholder="Message"></textarea>
-    
-                <button class="button_send" type="submit" >envoyer</button><br>
-            </form>
-        </fieldset>
-        
-        <ul>
-            <li class="barFooter"><a href="../index.html">Accueil</a></li>
-            <li class="barFooter"><a href="../Html/destinations.html">Destinations</a></li>
-            <li class="barFooter"><a href="../Html/photos.html">Photos</a></li>
-            <li class="barFooter"><a href="../Html/apropos.html">Contact</a></li>
-       
-            <li class="barFooter">Mentions légales</li>
-            <li class="icons">
-                <li>
-                    <a class="logo" href="https://www.linkedin.com/in/laure-bouet-2a399b239?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bzix0oYBzTjCSOw69q1vIwQ%3D%3D">
-                        <i  class="fa-brands fa-linkedin"></i></a>
-                        <a class="logo" href=""><i  class="fa-solid fa-envelope"></i>
-                    </a>
-                </li>
-        </ul>
-        
-    </footer>
+        <div class="d-flex flex-wrap justify-content-center" >
+             <div style="width:450px;" id="barnavfooter">
+                 <ul class="list-group">
+                     <li class="list-group-item"><a aria-label="bar de navigation bas de page, bouton accueil" href="../index.html">Accueil</a></li>
+                     <li class="list-group-item"><a aria-label="bar de navigation bas de page, bouton choix de destinations" href="../Html/destinations.html">Destinations</a></li>
+                     <li class="list-group-item"><a aria-label="bar de navigation bas de page, bouton bibilothéque de photos" href="../Html/photos.html">Photos</a></li>
+                     <li class="list-group-item"><a aria-label="bar de navigation bas de page, bouton en savoir plus sur moi" href="../Html/apropos.html">Contact</a></li>
+                     <li class="list-group-item"><a aria-label="bar de navigation bas de page, mentions légales" href="#">Mentions légales</a></li>
+                 </ul>
+             </div>
+             <div style="width:450px;" id="icons">
+                 <ul class="list-group ">
+                     <li class="list-group-item"><a aria-label="icon pour mon linkedin " href="https://www.linkedin.com/in/laure-bouet-2a399b239?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bzix0oYBzTjCSOw69q1vIwQ%3D%3D"><i class="bi bi-linkedin"></a></i></li>
+                     <li class="list-group-item"><a aria-label="icon pour mon github" href="https://github.com/laurebouet"><i class="bi bi-github"></a></i></li>
+                 </ul>
+             </div>
+ 
+             <div  style="width: 450px;" id="formulaire" >
+                 <div class="col-auto">
+                     <label for="exampleFormControlInput1">Adresse email</label>
+                     <input type="email" class="form-control" id="exampleFormCotrolInput1" placeholder="nom@example.com" required>
+                 </div>
+                 <div class="col-auto">
+                     <label for="exampleFormControlTextarea1" class="form-label" required>
+                         Votre demande :
+                     </label>
+                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                 </div>
+                 
+                 <div class="col-auto">
+                     <label for="formFileLg" class="form-label">
+                         Choissisez un fichier :
+                     </label>
+                     <input class="form-control form-control-lg" id="formFileLg" type="file">
+                 </div>
+                 <div class="col-auto">
+                     <button type="submit" class="btn  btn ">Envoyer</button>
+                 </div>
+             </div>
+        </div>
+     </footer>
     
 </body>
 </html>
