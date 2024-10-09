@@ -2,13 +2,13 @@
 
 
 
-.article{
+.objet{
     background-color: var(--white);
     border-radius: var(--font-border-title);
     display: block;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.article:hover{
+.objet:hover{
     transform: scale(1.01);
 }
 
@@ -20,7 +20,7 @@
     text-transform: uppercase;
 }
 
-.imgart{
+.imageObjet{
     width: 100%;
     height: 70%;
     border-radius:10px 10px 0px 0px;

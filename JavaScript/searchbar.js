@@ -1,27 +1,36 @@
 //bar de recherche
-
+window.onload = searchbar();
 function searchbar(){
-    var input, filter, altText, img, i, articles, count;
+    var input, filter, altText, img, i, objets,objet, count;
     count=0;
     input =  document.getElementById("recherche");
     filter = input.value.toUpperCase();
-    articles = document.getElementsByClassName("article");
+    objets = document.getElementsByClassName("objet");
+    // console.log(objets.length);
 
-    // console.log(articles.length);
+    for(i=0;i<objets.length+1;i++){
+        
+        objet = document.getElementsByClassName("imageObjet");
 
-    for(i=0;i<articles.length+1;i++){
+        // objet = document.querySelector(".imageObjet");
+        // console.log(objets[i]);
+        // altText=objet.alt;
+        // console.log(altText);
+        // console.log(objet);
 
-        img= document.getElementsByClassName("imgart")[i] ;
+        img= document.getElementsByClassName("imageObjet")[i];
         altText = img.alt;
-
-        console.log(img);
-        console.log(altText);
+        
         if(altText.toUpperCase().indexOf(filter) > -1){
-            articles[i].style.display = "";
+            objets[i].style.display = "";
+            // objet.style.display = "";
+            console.log(img);
+            console.log(altText);
             count=count+1;
         }
         else{
-            articles[i].style.display = "none";
+            objets[i].style.display = "none";
+            // objet.style.display = "none";
         }
     }
     document.getElementById("res").innerHTML =count+" résulat(s) trouvé(s)";
