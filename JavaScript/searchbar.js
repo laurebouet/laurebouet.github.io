@@ -1,5 +1,5 @@
 //bar de recherche
-window.onload = searchbar();
+
 function searchbar(){
     var input, filter, altText, img, i, objets,objet, count;
     count=0;
