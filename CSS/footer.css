@@ -18,11 +18,13 @@ footer{
     position: relative;
     background-color: var(--bg-color);
     margin-top: calc(var(--section-padding)*1);
-    padding: 1%;
+    padding: 2%;
 }
 
 #formulaire, .btn{
     color: var(--white);
+}
+.btn{
     border: 1px solid var(--white);
     border-radius: var(--font-border-title);
 }
@@ -30,8 +32,6 @@ footer{
 #icons{
     font-size: 150%;
 }
-
-
 
 .list-group-item a{
     text-decoration: none;

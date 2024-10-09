@@ -76,7 +76,7 @@
     </main>
     <footer>
         <div class="d-flex flex-wrap justify-content-center" >
-             <div style="width:450px;" id="barnavfooter">
+             <div style="width:450px; height:250px;" id="barnavfooter">
                  <ul class="list-group">
                      <li class="list-group-item"><a aria-label="bar de navigation bas de page, bouton accueil" href="../index.html">Accueil</a></li>
                      <li class="list-group-item"><a aria-label="bar de navigation bas de page, bouton choix de destinations" href="../Html/destinations.html">Destinations</a></li>
@@ -85,14 +85,15 @@
                      <li class="list-group-item"><a aria-label="bar de navigation bas de page, mentions légales" href="#">Mentions légales</a></li>
                  </ul>
              </div>
-             <div style="width:450px;" id="icons">
+             <div style="width:450px; " id="icons">
                  <ul class="list-group ">
                      <li class="list-group-item"><a aria-label="icon pour mon linkedin " href="https://www.linkedin.com/in/laure-bouet-2a399b239?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bzix0oYBzTjCSOw69q1vIwQ%3D%3D"><i class="bi bi-linkedin"></a></i></li>
                      <li class="list-group-item"><a aria-label="icon pour mon github" href="https://github.com/laurebouet"><i class="bi bi-github"></a></i></li>
                  </ul>
              </div>
  
-             <div  style="width: 450px;" id="formulaire" >
+             <div  style="width: 450px; height:250px;" id="formulaire" >
+
                  <div class="col-auto">
                      <label for="exampleFormControlInput1">Adresse email</label>
                      <input type="email" class="form-control" id="exampleFormCotrolInput1" placeholder="nom@example.com" required>
@@ -101,21 +102,16 @@
                      <label for="exampleFormControlTextarea1" class="form-label" required>
                          Votre demande :
                      </label>
-                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-                 </div>
-                 
-                 <div class="col-auto">
-                     <label for="formFileLg" class="form-label">
-                         Choissisez un fichier :
-                     </label>
-                     <input class="form-control form-control-lg" id="formFileLg" type="file">
+                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                    <div  id="liveAlertPlaceholder" style="z-index: 2; position: absolute;"></div>
                  </div>
                  <div class="col-auto">
-                     <button type="submit" class="btn  btn ">Envoyer</button>
+                    <button type="button" class="btn btn" id="liveAlertBtn">Envoyer</button>
                  </div>
              </div>
         </div>
      </footer>
+    <script src="../JavaScript/alertmessage.js"></script>
 
 </body>
 </html>
