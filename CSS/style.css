@@ -33,24 +33,31 @@ body{
 /* SEARCH BAR */
 .searchbar{
     
-    /* background-color: var(--bg-color); */
+    background-color: var(--bg-color);
     border-radius: var(--font-border-title);
-    width: var(--article-width);
-    /* height: 5%; */
-    position: relative;
-    margin-top: calc(var(--section-padding)*4);
-    margin-left: var(--left-margin);
-}
+    width: 250px;
+    margin-top: calc(var(--section-padding)*2);
+} 
 #recherche{
-    /* margin-top: 2%; */
-
-    /* width: calc(var(--article-width)*4); */
+    
     border: none;
     outline: none;
     background-color: transparent;
+    color: var(--white);
+    padding: 7px;
+    text-align: start;
+    margin: auto;
+    align-items: center;
 }
 #res{
-    color: red;
-    font-size: 12px;
+    font-size: 15px;
     margin-left: 10%;
+    color: var(--white);
+    padding: 1%;
+
+}
+.bi-search{
+    font-size: 20px;
+    padding: 2%;
+    color: var(--white);
 }

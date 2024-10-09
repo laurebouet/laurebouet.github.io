@@ -1,7 +1,9 @@
 @import "variables.css";
 
 
-
+.div-articles{
+    margin-top: var(--section-padding);
+}
 .objet{
     background-color: var(--white);
     border-radius: var(--font-border-title);
