@@ -57,10 +57,6 @@
 
 .textPic{
     margin-top: -15%;
-    background-color: aqua;
-
-    /* align-items: center; */
-    /* text-align: center; */
     text-transform: uppercase;
     height: max-content;
 }
@@ -70,4 +66,15 @@
     font-weight: bold;
     font-size: 90%;
     color: var(--white);
+}
+
+@media screen and (max-width: 1050px){
+    .pictures{
+        width: 250px;
+    }    
+}
+@media screen and (min-width: 1050px){
+    .pictures{
+        width: 400px;
+    }
 }
