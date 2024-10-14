@@ -7,16 +7,21 @@
     padding: 0;
 }
 
-body{
+/* body{
     background-color: rgb(202, 204, 206);
+} */
+.container-fluid{
+    padding: 0;
+    height: 80px;
 }
+
 .menu{
     text-decoration: none;
     color: var(--black);
-
+    text-transform: uppercase;
 }
 .navbar-nav li{
-    margin: 4%;
+    margin: 5%;
 }
 
 
@@ -26,8 +31,9 @@ body{
 .navbar-brand img{
     z-index: 2;
     position:relative;
-    width: 125px;
-    height: 125px;
+    /* width: 90px;
+    height: 90px; */
+    width: 90px;
 }
 
 /* SEARCH BAR */

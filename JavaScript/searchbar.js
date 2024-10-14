@@ -9,19 +9,22 @@ function searchbar(){
 
     for(i=0;i<objets.length;i++){
         
-        // objet = document.getElementsByClassName("imageObjet");
+        objet = document.getElementsByClassName("imageObjet");
         img= document.getElementsByClassName("imageObjet")[i];
+
         altText = img.alt;
         
         if(altText.toUpperCase().indexOf(filter) > -1){
             console.log(img);
             console.log(altText);
 
-            objets[i].style.display = "";
+            objets[i].classList.remove("d-none");
+            // objets[i].style.display = "";
             count=count+1;
         }
         else{
-            objets[i].style.display = "none";
+            objets[i].classList.add("d-none");
+            // objets[i].style.display = "none";
         }
     }
     document.getElementById("res").innerHTML =count+" résulat(s) trouvé(s)";

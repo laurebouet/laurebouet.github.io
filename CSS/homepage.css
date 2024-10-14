@@ -32,7 +32,6 @@
 
 
 
-
 /* TITLES */
 
 .title{
@@ -75,6 +74,6 @@
 }
 @media screen and (min-width: 1050px){
     .pictures{
-        width: 400px;
+        width: 350px;
     }
 }

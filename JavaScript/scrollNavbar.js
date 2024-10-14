@@ -2,16 +2,17 @@ window.onscroll = function() {scrollnavbar()};
 
 function scrollnavbar(){
     var navbar = document.getElementsByTagName("nav");
-    console.log(navbar);
-    console.log(document.body.scrollTop)
-    console.log(document.documentElement.scrollTop)
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        console.log("scrolling");
-        navbar[0].style.backgroundColor = "rgb(202, 204, 206)";
-        navbar[0].style.position = "fixed";
+        // console.log("scrolling");
+        // navbar[0].style.backgroundColor = "rgb(202, 204, 206)";
+        navbar[0].classList.add("body");
+        navbar[0].classList.add("fixed-top");
+        // navbar[0].style.position = "fixed";
         
     } else {
-        navbar[0].style.backgroundColor = "";
-        navbar[0].style.position = "";
+        // navbar[0].style.backgroundColor = "";
+        navbar[0].classList.remove("body");
+        // navbar[0].classList.remove("fixed-top");
+        // navbar[0].style.position = "";
     }
 }

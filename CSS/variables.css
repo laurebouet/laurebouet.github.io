@@ -41,3 +41,8 @@
     --body:rgb(202, 204, 206);
 
 }
+
+
+.body{
+    background-color: var(--bg-color);
+}
