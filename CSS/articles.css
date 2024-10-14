@@ -10,6 +10,8 @@ h3{
 }
 .map{
     width: 450px;
+    background-color: aqua;
+
     padding: 2%;
 }
 
