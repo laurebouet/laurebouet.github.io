@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    
+    
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/variables.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/homepage.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/worldmap.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/footer.css"/>
+    
+    <title>Travel</title>
+    
+    <!-- favicon -->
+    <link rel="icon" href="../assets/pics/favicon.ico" />
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/83f99e36e2.js" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg p-0 fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html" aria-label="logo du siteweb"><img src="../images/logo.jpg" alt="logo"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="bouton pour afficher le menu de coté">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <a class="navbar-brand" href="../index.html" ><img src="../images/logo.jpg" alt="logo"></a>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+
+                <!-- <div class="dropdown-menu"> -->
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 ">
+                                <li><a class="menu" aria-label="bar de navigation, bouton accueil" href="../index.html">Accueil</a></li>
+                                <li><a class="menu" aria-label="bar de navigation, bouton choix de destinations" href="../Html/destinations.html">Destinations</a></li>
+                                <li><a class="menu" aria-label="bar de navigation, bouton bibilothéque de photos" href="../Html/photos.html">Photos</a></li>
+                                <li><a class="menu" aria-label="bar de navigation, bouton en savoir plus sur moi" href="../Html/apropos.html">Contact</a></li>
+                        </ul>
+                    </div>
+                <!-- </div> -->
+          </div>
+        </div>
+      </nav>
+
+
+
+    <main>
+    
+    
+    </main>
+    <footer>
+        <div class="d-flex flex-wrap justify-content-center" >
+             <div style="width:450px; height:250px;" id="barnavfooter">
+                 <ul class="list-group">
+                     <li class="list-group-item"><a aria-label="bar de navigation bas de page, bouton accueil" href="../index.html">Accueil</a></li>
+                     <li class="list-group-item"><a aria-label="bar de navigation bas de page, bouton choix de destinations" href="../Html/destinations.html">Destinations</a></li>
+                     <li class="list-group-item"><a aria-label="bar de navigation bas de page, bouton bibilothéque de photos" href="../Html/photos.html">Photos</a></li>
+                     <li class="list-group-item"><a aria-label="bar de navigation bas de page, bouton en savoir plus sur moi" href="../Html/apropos.html">Contact</a></li>
+                     <li class="list-group-item"><a aria-label="bar de navigation bas de page, mentions légales" href="#">Mentions légales</a></li>
+                 </ul>
+             </div>
+             <div style="width:450px; " id="icons">
+                 <ul class="list-group ">
+                     <li class="list-group-item"><a aria-label="icon pour mon linkedin " href="https://www.linkedin.com/in/laure-bouet-2a399b239?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bzix0oYBzTjCSOw69q1vIwQ%3D%3D"><i class="bi bi-linkedin"></a></i></li>
+                     <li class="list-group-item"><a aria-label="icon pour mon github" href="https://github.com/laurebouet"><i class="bi bi-github"></a></i></li>
+                 </ul>
+             </div>
+ 
+             <div  style="width: 450px; height:250px;" id="formulaire" >
+
+                 <div class="col-auto">
+                     <label for="exampleFormControlInput1">Adresse email</label>
+                     <input type="email" class="form-control" id="exampleFormCotrolInput1" placeholder="nom@example.com" required>
+                 </div>
+                 <div class="col-auto">
+                     <label for="exampleFormControlTextarea1" class="form-label" required>
+                         Votre demande :
+                     </label>
+                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                    <div  id="liveAlertPlaceholder" style="z-index: 2; position: absolute;"></div>
+                 </div>
+                 <div class="col-auto">
+                    <button type="button" class="btn btn" id="liveAlertBtn">Envoyer</button>
+                 </div>
+             </div>
+        </div>
+     </footer>
+    <script src="../JavaScript/alertmessage.js"></script>
+    <script src="../JavaScript/scrollNavbar.js"></script>
+
+</body>
+</html>

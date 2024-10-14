@@ -2,94 +2,49 @@
 
 /* world map */
 
-/* TITLES */
-
-.titlemap{
-    margin-top: var(--section-padding);
-    /*background-color: #a4c2c9;*/
-    /*margin-top: 1%;*/
-    text-align: center;
-    font-family: monospace;
-    text-transform: uppercase;
-}
-
 .d3{
-    
-    /* margin-top: var(--section-padding); */
-}
-
-
-/* SECTION PHOTO ET TEXT */
-/* .d2 .tan{
-    width: 15%;
-    height: 35%;
-    /*margin-top: 15%;*/
-    /* margin-left: 79%;
-    position: relative;
-} */ 
-/* .d2 pre{
-    margin-left: 75%;
-    margin-top: -15%;
-    position: absolute;
-    z-index: 1;
-    color: var(--white);
-    font-weight: 500;
-} */
-
-/* WORLD MAP SVG */
-
-
-.d3{
-    margin-top: var(--section-padding);
+    margin-top: calc(var(--section-padding)*2);
 }
 .map{
-    padding: var(--section-padding);
-    width: var(--bg-width);
     margin: auto;
+    /* background-color: antiquewhite; */
 }
-
-/*.mapimg{
-    position: relative;
-    color: var(--bg-color);
-    /* margin-top: -15%; */
-    /* width: var(--bg-width); */
-    /* float: left; */
-    /* margin-left: 7%; */
-
-/* } */
 .mapimg path:hover{
     fill: var(--bg-color);
 }
 
-/* quote */
-.quote p{
-    /* float: left; */
-    font-size: 160%;
-    position: relative;
-    /* margin-top: 3% ; */
-    /* margin-left: 20%; */
-}
 
-/* BUTTON DESTINATIONS */
-/* 
-.d4text h4 a{
-    position: relative;
-    color: var(--white);
-    background-color: var(--bg-color);
-    padding: 1%;
-    float: right;
-    margin-top: 10%;
-    margin-right: 10%;
-    text-transform: uppercase;
-}
 
-.d4text .text{
-    position: relative;
-    float: right;
-    text-align: end;
-    margin-top:4%;
-    margin-right: 10%;
-    width: 15%;
-    font-size: 70%;
-    /*background-color: #a4c2c9;*/
-/*} */
+/* .planetrack{
+    margin-top: var(--section-padding);
+    width:100%;
+    border:1px solid #CCC;
+    position:relative;
+    top:0; bottom:0; left:0;right:0;
+    margin:auto;
+    border-radius:50%; 
+} 
+.bi-airplane-engines{
+    color: red;
+    width: 8%;
+    animation: plane 7s linear infinite;
+    margin-top: var(--section-padding);
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;    
+    transform: rotate(90deg);
+
+} 
+@keyframes plane {
+    
+    0%{
+        transform:rotate(0deg)
+                  translate(-165px)
+                  rotate(0deg);
+      
+      }
+      100%{
+        transform:rotate(180deg)
+                  translate(-165px)
+                  rotate(-180deg);
+      }
+} */

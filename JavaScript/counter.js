@@ -1,5 +1,5 @@
 
-
+window.onload = function() {
 visited = 
 ['FR','PT','TZ','ES',
 'FI','DK','BG','TN','GB','BR','HR'
@@ -7,18 +7,18 @@ visited =
 
 
 
-var number = document.getElementById("countnumber");
+var text = document.getElementById("counttext");
 var count = 0;
 console.log(visited)
-console.log(number)
+    let counts = setInterval(updateCount, 20);
 
-
-
-for(var i=0;i<visited.length;i++){
-    console.log(visited[i])
-    setTimeout(()=>{
-    count++;
-    number.innerHTML=count
-    },200)
-    
+    function updateCount(){
+        count++;
+        text.innerHTML=count;
+        
+        if (count === visited.length) {
+            clearInterval(counts);
+        }  
+    } 
 }
+    

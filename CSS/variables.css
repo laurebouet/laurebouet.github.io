@@ -11,20 +11,21 @@
     --font : "Inter Tight", sans-serif;
     
     /* width */
-    --bg-width : 60%;
+    --bg-width : 75%;
     --article-width : 21%;
 
     /* padding */
+
     --title-padding : 10px;
-    --section-padding : 8%;
+    --section-padding : 80px;
 
     /* margin */
 
     --left-margin : 9.5%;
 
     /* border */
-    --font-border-title : 50px;
-    --font-border-text : 10px;
+    --font-border-title : 10px 10px 10px 10px;
+    --font-border-text : 10%;
 
     /* --right-upper-corner : 
     --left-upper-corner :
@@ -35,14 +36,8 @@
     /* color */
     --white : #ffffff;
     --black : #000000;
-    --bg-color : #decaca;
-    --color : #843434;
+    --bg-color : #505050;
+    --color : #6c6a6c;
+    --body:rgb(202, 204, 206);
 
 }
-
-/* .inter-tight-<uniquifier> {
-    font-family: "Inter Tight", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  } */

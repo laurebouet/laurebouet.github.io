@@ -1,14 +1,23 @@
 @import "variables.css";
 
 
-/* UNIQUEMENT POUR CETTE PAGE */
-
 main{
     width: var(--bg-width);
     margin: auto;
 }
-.container{
-    margin: var(--section-padding);
+
+.contact{
+    list-style: none;
+    background-color: #a4c2c9;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+.contact li, h4{
+    margin: 10px;
+    padding: 10px;
+}
+.contact p{
+    margin:  10px 20px;
 }
 
 
@@ -16,18 +25,21 @@ main{
     margin-top: calc(var(--section-padding)*2);
     text-align: center;
     text-transform: uppercase;
+
 }
-/* 
-.photo{
-    
-    background-color: rgb(59, 154, 237);} */
 
-
-.photo img{
+.col-lg-6 {
+    margin-top: var(--section-padding);
+    text-align: center;
+}
+.col-lg-6 p{
+    text-align: left ;
+    border: 1px solid var(--bg-color);
     border-radius: var(--font-border-title);
-    width: calc(var(--article-width));
+    padding: 4%;
 }
-
-
-
-
+#photo img{
+    width: 33%;
+    border-radius: var(--font-border-text);
+    /* width: calc(var(--article-width)); */
+}

@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8"
+    name="bibilotheaue de photos" 
+    content="recherche par mot cle les photos">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="../CSS/style.css"/>
     <link rel="stylesheet" type="text/css" href="../CSS/variables.css"/>
@@ -9,11 +15,10 @@
     <link rel="stylesheet" type="text/css" href="../CSS/photos.css"/>
     <link rel="stylesheet" type="text/css" href="../CSS/footer.css"/>
 
+    <title>Photos</title>
 
     <!-- favicon -->
     <link rel="icon" href="../assets/pics/favicon.ico" />
-    <!-- icons -->
-    <script src="https://kit.fontawesome.com/83f99e36e2.js" crossorigin="anonymous"></script>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,150 +30,141 @@
 
 
 <body>
+    <nav class="navbar navbar-expand-lg p-0 fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html" aria-label="logo du siteweb"><img src="../images/logo.jpg" alt="logo"></a>
 
-    <nav id="up" class="barnav">
-        <div class="logobar">
-            <a href="../index.html"><img src="../images/logo.jpg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="bouton pour afficher le menu de coté">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <a class="navbar-brand" href="../index.html" ><img src="../images/logo.jpg" alt="logo"></a>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+
+                <!-- <div class="dropdown-menu"> -->
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 ">
+                                <li><a class="menu" aria-label="bar de navigation, bouton accueil" href="../index.html">Accueil</a></li>
+                                <li><a class="menu" aria-label="bar de navigation, bouton choix de destinations" href="../Html/destinations.html">Destinations</a></li>
+                                <li><a class="menu" aria-label="bar de navigation, bouton bibilothéque de photos" href="../Html/photos.html">Photos</a></li>
+                                <li><a class="menu" aria-label="bar de navigation, bouton en savoir plus sur moi" href="../Html/apropos.html">Contact</a></li>
+                        </ul>
+                    </div>
+                <!-- </div> -->
+          </div>
         </div>
-        <div class="accueil">
-            <ul class="navlinks">
-                <li class="menu">
-                    <a class="homemenu" href="../index.html">Accueil</a>
-                </li>
-                <li class="menu">
-                    <a href="../Html/destinations.html" class="homemenu">Destinations</a>
-                </li>
-                <li class="menu">
-                    <a class="homemenu" href="../Html/photos.html">Photos</a>
-                </li>
-                <li class="menu">
-                    <a class="homemenu" href="../Html/apropos.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-
-    </nav>
-
+      </nav>
+    
     <main>
-        <section class="searchbar">
-            <h3>Recherche d'une photo par mot-clé</h3>
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input id="recherche" type="text" onkeyup="search()" placeholder="votre recherche">
-            <p id="res"><br></p>
-            
-            <div class="dico">
-                <ul>
-                    <li class="paystitre">Photos par pays</li>
-                    
-                    <button id="btn1">A-E</button>
-                    <button id="btn2">F-J</button>
-                    <button id="btn3">K-O</button>
-                    <button id="btn4">P-T</button>
-                    <button id="btn5">U-Z</button>  
-                    <button id="btn6">voir toutes les photos</button>  
-                </ul>
-            </div>
-            
-        </section>
+        <div class="d-flex flex-wrap justify-content-start searchbar">
+            <i class="bi bi-search"></i>
+            <input id="recherche" type="text" onkeyup="searchbar()" placeholder="votre recherche">
+            <p id="res"></p>
+        </div>
         
         <div>
             <ul id="photos">
-                <!-- <li id=""><a href=""></a><img title="" class="gauche" src="./images" alt="" ></li> -->
-                <li class="A"><a href="">Danemark copenhague port mer port nyhavn bateau batiment</a><img title="Copenhague" class="gauche" src="../images/cphnyhavn.webp" alt="nyhavn" ></li>
-                <li class="A"><a href="">océan ocean mer vue panorama rio bresil brésil</a><img id="pic1" title="Brésil Rio de Janeiro" class="droite" src="../images/bresil.jpg" alt="bresil"></li>
-                <li class="A"><a href="">for&ecirc;t nuage arbre montagne bulgarie</a><img title=" Bulgarie" class="gauche" src="../images/bulgarie.JPG" alt="Arbre bulgarie"></li>
-                <li class="P"><a href="">fjord nuage neige norvège norvege paysage montagne </a> <img title="Fjord Norvège " class="droite" src="../images/norvege.jpg" alt="fjord norvège Neige"></li>
-                <li class="F"><a href="">finlande nuage arbre neige laponie</a> <img title="Laponie Finlande " class="gauche" src="../images/finlande.jpg" alt="finlande Neige"></li>
-                <li class="A"><a href="">canal amsterdam pont pays-bas</a><img title="canal des pays-bas" class="droite" src="../images/netherlands.jpg" alt="canaux des pays-bas"></li>
-                <li class="P"><a href="">coucher de soleil bateau ocean océan sable mer Zanzibar tanzanie </a><img title="Zanzibar" class="gauche" src="../images/soleil_tan.jpg" alt="coucher de soleil en tanzanie"></li>
-                <li class="A"><a href="">nuage Bulgarie montagne nature arbre</a><img title="bulgarie" class="droite" src="../images/bulgariemontagne.JPG" alt="" ></li>
-                <li class="A"><a href="">coucher de soleil Bulgarie</a><img title="bulgarie" class="gauche" src="../images/bulgariesoleil.JPG" alt="" ></li>
-                <li class="P"><a href="">coucher de soleil</a><img title="saint georges de didone" class="droite" src="../images/stgddsoleil.JPG" alt="" ></li>
-                <li class="F"><a href="">valdeblore nuage montagne nature lac arbre</a><img title="Valdeblore" class="gauche" src="../images/valdeblore.jpg" alt="" ></li>
-                <li class="P"><a href="">sahara afrique tunisie sable</a><img title="Tunisie" class="droite" src="../images/sahara.jpg" alt="" ></li>
-                <li class="A"><a href="">rose fleurs Danemark</a><img title="rose Bornholm" class="gauche" src="../images/rose.jpg" alt="roses" ></li>
-                <li class="P"><a href="">panorama nuage fjord neige norvège norvege paysage montagne </a><img title="Norvège" class="droite" src="../images/norvegepano.jpg" alt="" ></li>
-                <li class="A"><a href="">eglise fleurs Danemark </a><img title="Bornholm Danemark" class="gauche" src="../images/eglise.jpg" alt="eglise danemark" ></li>
-                <li class="A"><a href="">fleurs jaune</a><img title="Fleurs" class="droite" src="../images/fleurs.jpg" alt="" ></li>
-                <li class="P"><a href="">glacier glace neige norvège norvege paysage montagne </a><img title="Norvège" class="gauche" src="../images/glaciernorvege.jpg" alt="" ></li>
-                <li class="P"><a href="" >nuage neige norvège norvege paysage montagne</a><img title="Norvège" class="droite" src="../images/vuenorvege.jpg" alt="" ></li>
-                <li class="A"><a href="">port bateau nuage coucher de soleil Danemark</a><img title="Port Bornholm Danemark" class="gauche" src="../images/bateausoleil.jpg" alt="" ></li>
-                <li class="A"><a href="">barcelone mosaique salamandre</a><img title="Salamandre Barcelone" class="droite" src="../images/bcn.JPG" alt="" ></li>
-                <li class="A"><a href="">barcelone fontaine</a><img title="Barcelone Fontaine" class="gauche" src="../images/bcnfontaine.JPG" alt="" ></li>
-                <li class="A"><a href="">espagne coucher de soleil</a><img title="Espagne" class="droite" src="../images/soleilesp.JPG" alt="coucher de soleil esp" ></li>
-                <li class="A"><a href="">village batiment</a><img title="Alquézar, Espagne" class="gauche" src="../images/village.JPG" alt="village esp" ></li>
-                <li class="A"><a href="">Alquézar village Espagne</a><img title="Alquézar, Espagne" class="droite" src="../images/villageesp.JPG" alt="village esp" ></li>
-                <li class="A"><a href="">rio bresil brésil corcovado monument </a><img title="corcovado" class="gauche" src="../images/corcovado.jpg" alt="" ></li>
-                <li class="A"><a href="">phare arbre Bornholm Danemark île nature</a><img title="Phare Bornholm Danemark" class="droite" src="../images/phare.jpg" alt="" ></li>
-                <li class="A"><a href="">Espagne tenerife Tenerife mer ocean rocher nature</a><img title="Tenerife" class="gauche" src="../images/tenerife.JPG" alt="paysage tenerife" ></li>
-                <li class="A"><a href="">plage Espagne espagne tenerife Tenerife mer ocean nature</a><img title="plage Tenerife" class="droite" src="../images/tenerifeplage.JPG" alt="" ></li>
-                <li class="P"><a href="">Tanzanie afrique Savane Mikumi National safari</a><img title="Savane Mikumi National Park" class="gauche" src="../images/safaritanzanie.jpg" alt="" ></li>
-                <li class="A"><a href="">barcelone Barcelone espagne Espagne monument Sagrada Familia</a><img title="Sagrada Familia" class="droite" src="../images/sagrada.JPG" alt="Sagrada Familia" ></li>
-                <li class="P"><a href="">Tanzanie afrique Savane Mikumi National safari lion animal</a><img title="Safari Tanzanie" class="gauche" src="../images/lionsafari.jpg" alt="lion" ></li>
-                <li class="P"><a href="">Tanzanie afrique Savane Mikumi National safari hippopotame animal</a><img title="Safari Tanzanie" class="droite" src="../images/hipposafari.jpg" alt="hippopotame" ></li>
-                <li class="P"><a href="">Tanzanie afrique Savane Mikumi National safari oiseau animal</a><img title="Safari Tanzanie" class="gauche" src="../images/oiseausafari.jpg" alt="oiseau" ></li>
-                <li class="P"><a href="">Tanzanie afrique Savane Mikumi National safari girafe animal</a><img title="Safari Tanzanie" class="droite" src="../images/girafesafari.jpg" alt="girafe" ></li>
-                <li class="P"><a href="">Tanzanie afrique Savane Mikumi National safari elephants animal</a><img title="Safari Tanzanie" class="gauche" src="../images/elephantssafari.jpg" alt="elephants" ></li>
-                <li class="P"><a href="">Tanzanie afrique Savane Mikumi National safari animal </a><img title="Safari Tanzanie" class="droite" src="../images/tansafari.jpg" alt="Tanzanie Safari" ></li>
-                <li class="A"><a href="">océan ocean mer vue rio bresil brésil Paraty</a><img title="Paraty, Brésil" class="gauche" src="../images/paraty.jpg" alt="Brseil paraty plage" ></li>
-                <li class="P"><a href="">Tunsie afrique musee</a><img title="Tunisie" class="droite" src="../images/tunamphore.jpg" alt="tunisie" ></li>
-                <li class="P"><a href="">Tunsie afrique ocean mer bateau ciel</a><img title="Tunisie" class="gauche" src="../images/tunbateau.jpg" alt="tunisie" ></li>
-                <li class="P"><a href="">Tunsie afrique</a><img title="Tunisie" class="droite" src="../images/tunbatiment.jpg" alt="tunisie" ></li>
-                <li class="P"><a href="">Tunsie afrique ocean mer bateau chameau animal ciel </a><img title="Tunisie" class="gauche" src="../images/tuncham.jpg" alt="tunisie" ></li>
-                <li class="P"><a href="">Tunsie afrique djerba</a><img title="Tunisie" class="droite" src="../images/tundjerbahood.jpg" alt="tunisie" ></li>
-                <li class="P"><a href="">Tunsie afrique monument</a><img title="Tunisie" class="gauche" src="../images/tunmonument.jpg" alt="tunisie" ></li>
-                <li class="P"><a href="">Tunsie afrique monument</a><img title="Tunisie" class="droite" src="../images/tunmosque.jpg" alt="tunisie" ></li>
-                <li class="P"><a href="">Tunsie afrique monument</a><img title="Tunisie" class="droite" src="../images/tunville.jpg" alt="tunisie" ></li>
-                <li class="P"><a href="">Tunsie afrique ocean mer bateau rocher ciel</a><img title="Tunisie" class="gauche" src="../images/tunocean.jpg" alt="tunisie" ></li>
-                <li class="K"><a href="">Italie Venise canal bateau</a><img title="Venise Murano" class="droite" src="../images/venise1.jpg" alt="venise" ></li>
-                <li class="K"><a href="">Italie Venise canal bateau</a><img title="Venise Murano" class="gauche" src="../images/venise2.jpg" alt="venise" ></li>
+
+                <li class="objet"><img class="imageObjet" title="Copenhague" src="../images/cphnyhavn.webp" alt="Danemark copenhague port mer port nyhavn bateau batiment" ></li>
+                <li class="objet"><img class="imageObjet" title="Brésil Rio de Janeiro" src="../images/bresil.jpg" alt="océan ocean mer vue panorama rio bresil brésil"></li>
+                <li class="objet"><img class="imageObjet" title=" Bulgarie" src="../images/bulgarie.JPG" alt="for&ecirc;t nuage arbre montagne bulgarie"></li>
+                <li class="objet"><img class="imageObjet" title="Fjord Norvège " src="../images/norvege.jpg" alt="fjord nuage neige norvège norvege paysage montagne "></li>
+                <li class="objet"><img class="imageObjet" title="Laponie Finlande " src="../images/finlande.jpg" alt="finlande nuage arbre neige laponie"></li>
+                <li class="objet"><img class="imageObjet" title="canal des pays-bas" src="../images/netherlands.jpg" alt="canal amsterdam pont pays-bas"></li>
+                <li class="objet"><img class="imageObjet" title="Zanzibar" src="../images/soleil_tan.jpg" alt="coucher de soleil bateau ocean océan sable mer Zanzibar tanzanie "></li>
+                <li class="objet"><img class="imageObjet" title="bulgarie" src="../images/bulgariemontagne.JPG" alt="nuage Bulgarie montagne nature arbre" ></li>
+                <li class="objet"><img class="imageObjet" title="bulgarie" src="../images/bulgariesoleil.JPG" alt="coucher de soleil Bulgarie" ></li>
+                <li class="objet"><img class="imageObjet" title="saint georges de didone" src="../images/stgddsoleil.JPG" alt="coucher de soleil" ></li>
+                <li class="objet"><img class="imageObjet" title="Valdeblore" src="../images/valdeblore.jpg" alt="valdeblore nuage montagne nature lac arbre" ></li>
+                <li class="objet"><img class="imageObjet" title="Tunisie" src="../images/sahara.jpg" alt="sahara afrique tunisie sable" ></li>
+                <li class="objet"><img class="imageObjet" title="rose Bornholm" src="../images/rose.jpg" alt="rose fleurs Danemark" ></li>
+                <li class="objet"><img class="imageObjet" title="Norvège" src="../images/norvegepano.jpg" alt="panorama nuage fjord neige norvège norvege paysage montagne" ></li>
+                <li class="objet"><img class="imageObjet" title="Bornholm Danemark" src="../images/eglise.jpg" alt="eglise danemark" ></li>
+                <li class="objet"><img class="imageObjet" title="Fleurs" src="../images/fleurs.jpg" alt="fleurs jaune eglise Danemark " ></li>
+                <li class="objet"><img class="imageObjet" title="Norvège" src="../images/glaciernorvege.jpg" alt="glacier glace neige norvège norvege paysage montagne " ></li>
+                <li class="objet"><img class="imageObjet" title="Norvège" src="../images/vuenorvege.jpg" alt="nuage neige norvège norvege paysage montagne" ></li>
+                <li class="objet"><img class="imageObjet" title="Port Bornholm Danemark" src="../images/bateausoleil.jpg" alt="port bateau nuage coucher de soleil Danemark" ></li>
+                <li class="objet"><img class="imageObjet" title="Salamandre Barcelone" src="../images/bcn.JPG" alt="barcelone mosaique salamandre espagne" ></li>
+                <li class="objet"><img class="imageObjet" title="Barcelone Fontaine" src="../images/bcnfontaine.JPG" alt="barcelone fontaine" ></li>
+                <li class="objet"><img class="imageObjet" title="Espagne" src="../images/soleilesp.JPG" alt="coucher de soleil espagne " ></li>
+                <li class="objet"><img class="imageObjet" title="Alquézar, Espagne" src="../images/villageesp.JPG" alt="Alquézar village Espagne" ></li>
+                <li class="objet"><img class="imageObjet" title="corcovado" src="../images/corcovado.jpg" alt="rio bresil brésil corcovado monument " ></li>
+                <li class="objet"><img class="imageObjet" title="Phare Bornholm Danemark" src="../images/phare.jpg" alt="phare arbre Bornholm Danemark île nature" ></li>
+                <li class="objet"><img class="imageObjet" title="Tenerife" src="../images/tenerife.JPG" alt="paysage  espagne Tenerife mer ocean rocher nature" ></li>
+                <li class="objet"><img class="imageObjet" title="plage Tenerife" src="../images/tenerifeplage.JPG" alt="plage Espagne tenerife Tenerife mer ocean nature" ></li>
+                <li class="objet"><img class="imageObjet" title="Savane Mikumi National Park" src="../images/safaritanzanie.jpg" alt="Tanzanie afrique Savane Mikumi National safari" ></li>
+                <li class="objet"><img class="imageObjet" title="Sagrada Familia" src="../images/sagrada.JPG" alt=" Barcelone espagne Espagne monument Sagrada Familia" ></li>
+                <li class="objet"><img class="imageObjet" title="Safari Tanzanie" src="../images/lionsafari.jpg" alt="Tanzanie afrique Savane Mikumi National safari lion animal" ></li>
+                <li class="objet"><img class="imageObjet" title="Safari Tanzanie" src="../images/hipposafari.jpg" alt="Tanzanie afrique Savane Mikumi National safari hippopotame animal" ></li>
+                <li class="objet"><img class="imageObjet" title="Safari Tanzanie" src="../images/oiseausafari.jpg" alt="Tanzanie afrique Savane Mikumi National safari oiseau animal" ></li>
+                <li class="objet"><img class="imageObjet" title="Safari Tanzanie" src="../images/girafesafari.jpg" alt="Tanzanie afrique Savane Mikumi National safari girafe animal" ></li>
+                <li class="objet"><img class="imageObjet" title="Safari Tanzanie" src="../images/elephantssafari.jpg" alt="Tanzanie afrique Savane Mikumi National safari elephants animal" ></li>
+                <li class="objet"><img class="imageObjet" title="Safari Tanzanie" src="../images/tansafari.jpg" alt="Tanzanie afrique Savane Mikumi National safari animal " ></li>
+                <li class="objet"><img class="imageObjet" title="Paraty, Brésil" src="../images/paraty.jpg" alt="océan ocean mer vue rio bresil brésil Paraty" ></li>
+                <li class="objet"><img class="imageObjet" title="Tunisie" src="../images/tunamphore.jpg" alt="Tunsie afrique musee" ></li>
+                <li class="objet"><img class="imageObjet" title="Tunisie" src="../images/tunbateau.jpg" alt="Tunsie afrique ocean mer bateau ciel" ></li>
+                <li class="objet"><img class="imageObjet" title="Tunisie" src="../images/tunbatiment.jpg" alt="Tunsie afrique" ></li>
+                <li class="objet"><img class="imageObjet" title="Tunisie" src="../images/tuncham.jpg" alt="Tunsie afrique ocean mer bateau chameau animal ciel " ></li>
+                <li class="objet"><img class="imageObjet" title="Tunisie" src="../images/tundjerbahood.jpg" alt="Tunsie afrique djerba" ></li>
+                <li class="objet"><img class="imageObjet" title="Tunisie" src="../images/tunmonument.jpg" alt="Tunsie afrique monument" ></li>
+                <li class="objet"><img class="imageObjet" title="Tunisie" src="../images/tunmosque.jpg" alt="Tunsie afrique monument" ></li>
+                <li class="objet"><img class="imageObjet" title="Tunisie" src="../images/tunville.jpg" alt="Tunsie afrique monument" ></li>
+                <li class="objet"><img class="imageObjet" title="Tunisie" src="../images/tunocean.jpg" alt="Tunsie afrique ocean mer bateau rocher ciel" ></li>
+                <li class="objet"><img class="imageObjet" title="Venise Murano" src="../images/venise1.jpg" alt="Italie Venise canal bateau" ></li>
+                <li class="objet"><img class="imageObjet" title="Venise Murano" src="../images/venise2.jpg" alt="Italie Venise canal bateau" ></li>
             </ul>
         
         </div>
     </main>
-    <script src="../JavaScript/dico.js"></script>
-    <script src="../JavaScript/photos.js"></script>
+    <script src="../JavaScript/searchbar.js"></script>
+
+    <footer>
+        <div class="d-flex flex-wrap justify-content-center" >
+             <div style="width:450px; height:250px;" id="barnavfooter">
+                 <ul class="list-group">
+                     <li class="list-group-item"><a aria-label="bar de navigation bas de page, bouton accueil" href="../index.html">Accueil</a></li>
+                     <li class="list-group-item"><a aria-label="bar de navigation bas de page, bouton choix de destinations" href="../Html/destinations.html">Destinations</a></li>
+                     <li class="list-group-item"><a aria-label="bar de navigation bas de page, bouton bibilothéque de photos" href="../Html/photos.html">Photos</a></li>
+                     <li class="list-group-item"><a aria-label="bar de navigation bas de page, bouton en savoir plus sur moi" href="../Html/apropos.html">Contact</a></li>
+                     <li class="list-group-item"><a aria-label="bar de navigation bas de page, mentions légales" href="#">Mentions légales</a></li>
+                 </ul>
+             </div>
+             <div style="width:450px; " id="icons">
+                 <ul class="list-group ">
+                     <li class="list-group-item"><a aria-label="icon pour mon linkedin " href="https://www.linkedin.com/in/laure-bouet-2a399b239?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bzix0oYBzTjCSOw69q1vIwQ%3D%3D"><i class="bi bi-linkedin"></a></i></li>
+                     <li class="list-group-item"><a aria-label="icon pour mon github" href="https://github.com/laurebouet"><i class="bi bi-github"></a></i></li>
+                 </ul>
+             </div>
+ 
+             <div  style="width: 450px; height:250px;" id="formulaire" >
+
+                 <div class="col-auto">
+                     <label for="exampleFormControlInput1">Adresse email</label>
+                     <input type="email" class="form-control" id="exampleFormCotrolInput1" placeholder="nom@example.com" required>
+                 </div>
+                 <div class="col-auto">
+                     <label for="exampleFormControlTextarea1" class="form-label" required>
+                         Votre demande :
+                     </label>
+                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                    <div  id="liveAlertPlaceholder" style="z-index: 2; position: absolute;"></div>
+                 </div>
+                 <div class="col-auto">
+                    <button type="button" class="btn btn" id="liveAlertBtn">Envoyer</button>
+                 </div>
+             </div>
+        </div>
+     </footer>
+    <script src="../JavaScript/alertmessage.js"></script>
+    <script src="../JavaScript/scrollNavbar.js"></script>
 
 </body>
-
-<footer class="footer">
-       
-    <fieldset>
-        <h2 class="formtitle">Message</h2>
-        <form action="message.php" method="post">
-            <input class="form_input" type="text" name="nom" placeholder="Nom"><br>
-
-            <input class="form_input" type="text" name="prénom" placeholder="Prénom"><br>
-
-            <input class="form_input" type="email" name="email" placeholder="Email"><br>
-
-            <textarea name="message" placeholder="Message"></textarea>
-
-            <button class="button_send" type="submit" >envoyer</button><br>
-        </form>
-    </fieldset>
-    
-    <ul>
-        <li class="barFooter"><a href="../index.html">Accueil</a></li>
-        <li class="barFooter"><a href="../Html/destinations.html">Destinations</a></li>
-        <li class="barFooter"><a href="../Html/photos.html">Photos</a></li>
-        <li class="barFooter"><a href="../Html/apropos.html">Contact</a></li>
-   
-        <li class="barFooter">Mentions légales</li>
-        <li class="icons">
-            <li>
-                <a class="logo" href="https://www.linkedin.com/in/laure-bouet-2a399b239?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bzix0oYBzTjCSOw69q1vIwQ%3D%3D">
-                    <i  class="fa-brands fa-linkedin"></i>
-                </a>
-                <!-- </li>
-                <li> -->
-                    <a class="logo" href="">
-                    <i  class="fa-solid fa-envelope"></i>
-                </a>
-            </li>
-        </li>
-    </ul>
-    
-</footer>
-
 </html>
