@@ -23,3 +23,14 @@ for (var i=0;i<visited.length;i++){
       "mouseout", (event) => { 
         event.target.style.fill = "black"; });
 }
+
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+// var countries = document.querySelectorAll('.country');
+//   countries.forEach(element => {
+//     const titles = element.getAttributeNS('http://www.w3.org/1999/xlink','title');
+//     console.log(titles);
+//   });
+
+// });

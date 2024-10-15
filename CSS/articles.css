@@ -10,8 +10,6 @@ h3{
 }
 .map{
     width: 450px;
-    background-color: aqua;
-
     padding: 2%;
 }
 
@@ -21,6 +19,5 @@ path{
 }
 
 .countryintro{
-    background-color: yellow;
     padding: 2%;
 }
