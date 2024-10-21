@@ -12,12 +12,17 @@ h3{
     width: 450px;
     padding: 2%;
 }
+.case{
+    width: 470px;
+    background-color: antiquewhite;
+    
+}
 
 path{
     fill: var(--bg-color);
 
 }
 
-.countryintro{
+.texte{
     padding: 2%;
 }

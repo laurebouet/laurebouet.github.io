@@ -13,7 +13,7 @@
 /* IMAGE BACKGROUND */
 .header{
     /* background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../images/back.jpg");  */
-    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4),rgba(0,0,0,0.3)), url("../assets/roadiceland-bg.jpeg"); 
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4),rgba(0,0,0,0.3)), url("../assets/convertio.in_roadiceland-bg.webp");
     background-position: 100%;
     position: relative;
     background-size: cover;
